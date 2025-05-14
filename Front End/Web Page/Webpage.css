@@ -1,6 +1,7 @@
 body {
     margin: 0%;
     padding: 0%;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -71,7 +72,7 @@ h1 {
     margin-top: 25px;
 }
 
-.inner-content {
+.inner-content{
     width: 620px;
     margin-top: -10px;
 }
@@ -112,6 +113,11 @@ h1 {
     cursor: pointer;
 
 }
+
+/* .menu-content{
+    font-weight:lighter;
+    color: black
+} */
 
 /* <------------------------------------------THIRD PAGE-----------------------------------------------> */
 
@@ -367,6 +373,11 @@ border:1px solid black
     margin-top: 120px;
 }
 
+.review-content-para{
+width: 520px;
+margin: auto;
+}
+
 /* <-----Next Page-----> */
 
 
@@ -395,7 +406,7 @@ border:1px solid black
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 200px;
+    width: 250px;
     text-align: left;
 }
 
@@ -406,11 +417,28 @@ border:1px solid black
     width: 120px;
     margin-top: 15px;
     font-family: "Poppins", sans-serif;
+    border: none;
+    font-weight:lighter;
 }
 
 .blog-para {
 
     margin-top: -15px;
+    /* font-weight:lighter ; */
+}
+
+
+.blog-heading:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+.one-latest-footer{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -442,3 +470,10 @@ border:1px solid black
     height: 35px;
     width: 250px;
 }
+
+/* .opening-hours{
+    display: flex;
+    flex-direction: column;
+} */
+
+
