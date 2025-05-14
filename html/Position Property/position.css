@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0%;
+
+}
+
+
+.container {
+    height: 100px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Poppins, sans-serif, Ubuntu;
+    position: sticky;
+    top:0%;;
+
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    cursor: pointer;
+}
+
+
+.btn {
+    background-color: #2097F3;
+    width: 110px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Poppins, sans-serif, Ubuntu;
+    
+}
+
+.icon{
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    font-size: 100px;
+}
+
+h1{
+    position:absolute;
+    top: 30px;
+    left: 100px;
+    
+}
+
+h2{
+    position: relative;
+    left: 200px;
+}

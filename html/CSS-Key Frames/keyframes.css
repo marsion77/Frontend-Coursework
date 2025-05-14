@@ -1,0 +1,90 @@
+.container-1 {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    position: relative;
+    animation: box1 10s infinite alternate ease-out;
+}
+
+.container-2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(221, 44, 44);
+    position: absolute;
+    animation-name: Box-2;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    
+   
+}
+
+.container-3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(59, 8, 153);
+    position: relative;
+    animation: Box-3 10s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes box1 {
+
+    25% {
+        background-color: aqua;
+        top: 100px;
+        border-radius: 5px;
+
+
+
+    }
+
+    50% {
+        background-color: rgb(235, 9, 9);
+        top: 200px;
+        border-radius: 15px;
+
+
+    }
+
+    75% {
+        background-color: blue;
+        top: 300px;
+        border-radius: 25px;
+    }
+
+    100% {
+        background-color: rgb(126, 248, 4);
+        top: 400px;
+        border-radius: 35px;
+    }
+
+}
+
+@keyframes Box-2{
+
+    from{
+        background-color: crimson;
+        right: 200px;
+    }
+
+    to{
+        background-color: forestgreen;
+        right: 400px;
+    }
+
+}
+
+@keyframes Box-3 {
+
+    from {
+        background-color: crimson;
+        left: 200px;
+    }
+
+    to {
+        background-color: forestgreen;
+        left: 400px;
+    }
+
+}

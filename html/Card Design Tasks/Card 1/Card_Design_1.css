@@ -1,0 +1,43 @@
+.webpage-container {
+
+    border: solid;
+    color: white;
+    height: 480px;
+    width: 418px;
+    text-align: center;
+    background-color: #181717;
+    border-radius: 12px;
+}
+
+
+.btn {
+
+    color: white;
+    background-color: rgb(66, 66, 238);
+    border-radius: 13px;
+    padding: 14px;
+    border: none;
+    width: 300px;
+
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mainbox {
+
+    border: 1px solid;
+    color: white;
+    height: 565px;
+    width: 418px;
+    text-align: center;
+    background-color: #181717;
+    border-radius: 12px;
+    margin: auto;
+    align-content: center;
+
+    padding: 20px;
+
+
+}

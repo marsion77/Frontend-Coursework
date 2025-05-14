@@ -1,0 +1,444 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/* <------------------------------------------FIRST PAGE------------------------> */
+
+
+.container {
+    /* width: 1160px; */
+    height: 600px;
+    color: white;
+    font-family: Poppins sans-serif;
+
+    /* padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px; */
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    /* position: absolute; */
+    background-size: cover;
+    background-image: url(.//hero-bg.jpg.webp);
+}
+
+.navigation {
+    position: sticky;
+    top: 0%;
+
+}
+
+/* .logo {
+    text-align: center;
+    position: relative;
+    left: 550px;
+} */
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.list-item:hover {
+    color: #F42F2C;
+}
+
+
+.menu {
+    list-style-type: none;
+}
+
+.menubtn {
+    color: white;
+    border: none;
+    border-radius: 0%;
+    background-color: #F42F2C;
+    font-family: Poppins, sans-serif;
+    padding: 12px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.menubtn:hover {
+    background-color: #3D3C43;
+}
+
+h1 {
+    margin-top: 25px;
+}
+
+.inner-content {
+    width: 620px;
+    margin-top: -10px;
+}
+
+.inner-comtainer {
+    height: 450px;
+    width: 75%;
+    margin: auto;
+}
+
+.image-container-logo {
+    display: flex;
+    justify-content: center;
+}
+
+/* <----------------------------------------------------SECOND PAGE-------------------------------------------> */
+
+.about {
+    width: 80%;
+    /* height: 400px; */
+    /* border: 2px solid red; */
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    margin-top: 90px;
+    font-family: Poppins, sans-serif;
+
+}
+
+.full-menubtn {
+    color: white;
+    border: none;
+    border-radius: 0%;
+    background-color: #F42F2C;
+    font-family: Poppins, sans-serif;
+    padding: 12px;
+    width: 200px;
+    cursor: pointer;
+
+}
+
+/* <------------------------------------------THIRD PAGE-----------------------------------------------> */
+
+.kind-of-foods {
+
+    width: 80%;
+    height: 900px;
+    /* border: 1px solid black; */
+    margin: auto;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    margin-top: 150px;
+
+
+}
+
+.All-Menu {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    font-family: Poppins, sans-serif;
+    border-radius: 10px;
+}
+
+.food-btn {
+    border: none;
+    height: 100px;
+    width: 200px;
+    background-color: #F9F9FF;
+    font-family: Poppins, sans-serif;
+
+}
+
+.food-btn:hover {
+    cursor: pointer;
+}
+
+.food-btn-main {
+    height: 100px;
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    background-color: #F42F2C;
+    font-family: Poppins, sans-serif;
+    cursor: pointer;
+}
+
+.items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    column-gap: 90px;
+    row-gap: 40px;
+
+}
+
+/* <--------------------------------------------------FOURTH PAGE---------------------------------------------------> */
+
+
+/* .reservation{
+    width: 100%;
+    height: 500px;
+    border: 1px solid red;
+    font-family: Poppins, sans-serif;
+  
+}
+
+.reservation-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+}
+
+.reservation-content{
+width: 100%;
+border: 1px solid black;
+}
+
+.form-container{
+width: 100%;
+border:1px solid black
+} */
+
+
+
+.reserv-container {
+    margin: auto;
+    height: 700px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    background-image: url(.//hero-bg.jpg.webp);
+}
+
+.sub-container {
+    height: 700px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.sub-container-A {
+    height: 400px;
+    width: 50%;
+    color: white;
+    margin-top: 200px;
+}
+
+.sub-container-B {
+    height: 500px;
+    width: 40%;
+    background-color: white;
+    text-align: center;
+}
+
+.form {
+
+    /* height: 200px; */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-left: 50px;
+    margin-top: 100px;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.field {
+    /* text-align: center; */
+    width: 300px;
+    /* height: 45px; */
+    /* border: 1px solid black; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 100px;
+
+}
+
+
+.reserve-content {
+    width: 500px;
+}
+
+.reserv-btn {
+    color: white;
+    background-color: #F42F2C;
+    border: none;
+    width: 160px;
+    height: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* <------Next Page---------> */
+
+.gallery-container {
+    width: 100%;
+    height: 1100px;
+    margin: 0%;
+    padding: 0%;
+    background-color: #F9F9FF;
+    margin-top: 80px;
+    font-family: "Poppins", sans-serif;
+}
+
+.sub-gallery-container {
+    width: 80%;
+    margin: auto;
+}
+
+.gallery-content {
+    text-align: center;
+}
+
+.gallery-btns-grp {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-gallery {
+    height: 100px;
+    width: 160px;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-gallery-menu {
+    color: white;
+    width: 160px;
+    background-color: #F42F2C;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-gallery-last {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 160px;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.gallery-images {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    gap: 25px;
+}
+
+.img6 {
+    margin-top: -100px;
+}
+
+/* <-----Next Page-----> */
+
+
+.review-container {
+
+    height: 500px;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", sans-serif;
+    background-image: url(.//review-bg.jpg);
+
+}
+
+.review-content {
+    height: 400px;
+    text-align: center;
+    margin: auto;
+
+}
+
+.review-image {
+    margin-top: 120px;
+}
+
+/* <-----Next Page-----> */
+
+
+.Maim-blog-container {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", sans-serif;
+}
+
+.Blog-container {
+    height: 650px;
+    width: 80%;
+    /* border: 1px solid black; */
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.latest {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.one-latest {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 200px;
+    text-align: left;
+}
+
+.blog-btn {
+    color: white;
+    background-color: black;
+    height: 25px;
+    width: 120px;
+    margin-top: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.blog-para {
+
+    margin-top: -15px;
+}
+
+
+/* <!-- <-----Next Page-----> */
+
+.footer-container {
+    margin: 0%;
+    padding: 0%;
+    background-color: #F42F2C;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.footer {
+    height: 450px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.email-label {
+    border-radius: 15px;
+    border: none;
+    height: 35px;
+    width: 250px;
+}
