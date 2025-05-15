@@ -1,0 +1,15 @@
+body {
+    display: flex;
+}
+
+p {
+    color: rgb(34, 14, 218);
+    background-color: red;
+    font-size: 50px;
+}
+
+h1 {
+    color: aqua;
+}
+
+/*# sourceMappingURL=First.css.map */

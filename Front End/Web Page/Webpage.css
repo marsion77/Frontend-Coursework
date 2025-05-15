@@ -21,7 +21,7 @@ body {
     font-family: "Poppins", sans-serif;
     /* position: absolute; */
     background-size: cover;
-    background-image: url(.//hero-bg.jpg.webp);
+    background-image: url(.//mainimg.jpg)
 }
 
 .navigation {
@@ -75,6 +75,7 @@ h1 {
 .inner-content{
     width: 620px;
     margin-top: -10px;
+    
 }
 
 .inner-comtainer {
@@ -114,10 +115,10 @@ h1 {
 
 }
 
-/* .menu-content{
-    font-weight:lighter;
-    color: black
-} */
+.menu-content{
+
+    color:#798189;
+}
 
 /* <------------------------------------------THIRD PAGE-----------------------------------------------> */
 
@@ -167,15 +168,29 @@ h1 {
 }
 
 .items-container {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     text-align: justify;
     column-gap: 90px;
-    row-gap: 40px;
+    row-gap: 40px; */
 
+    display: flex;
+  align-items: center;
+    text-align: left;
+    gap: 50px;
+   
+}
+
+.sub-menu-bar{
+    display: flex;
+}
+
+.amt{
+    color: #F42F2C;
+    
 }
 
 /* <--------------------------------------------------FOURTH PAGE---------------------------------------------------> */
@@ -213,7 +228,9 @@ border:1px solid black
     height: 700px;
     width: 100%;
     font-family: "Poppins", sans-serif;
-    background-image: url(.//hero-bg.jpg.webp);
+    background-image: url(https://preview.colorlib.com/theme/marco/img/reservation-bg.jpg);
+    
+
 }
 
 .sub-container {
@@ -233,10 +250,11 @@ border:1px solid black
 }
 
 .sub-container-B {
-    height: 500px;
+    height: 550px;
     width: 40%;
     background-color: white;
     text-align: center;
+    
 }
 
 .form {
@@ -262,6 +280,7 @@ border:1px solid black
     /* border: 1px solid black; */
     font-family: "Poppins", sans-serif;
     font-weight: 100px;
+    color: #798189;
 
 }
 
@@ -333,6 +352,7 @@ border:1px solid black
     border: none;
     background-color: #FFFFFF;
     cursor: pointer;
+    font-family: "Poppins", sans-serif;
 }
 
 .gallery-images {
@@ -342,6 +362,11 @@ border:1px solid black
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     gap: 25px;
+}
+
+.img4{
+
+    margin-top: -100px;
 }
 
 .img6 {
@@ -358,7 +383,8 @@ border:1px solid black
     margin: 0%;
     padding: 0%;
     font-family: "Poppins", sans-serif;
-    background-image: url(.//review-bg.jpg);
+    background-image: url(https://preview.colorlib.com/theme/marco/img/review-bg.jpg);
+    background-size: cover;
 
 }
 
@@ -376,6 +402,7 @@ border:1px solid black
 .review-content-para{
 width: 520px;
 margin: auto;
+color: #798189;
 }
 
 /* <-----Next Page-----> */
@@ -424,6 +451,7 @@ margin: auto;
 .blog-para {
 
     margin-top: -15px;
+    color: #798189;
     /* font-weight:lighter ; */
 }
 
@@ -439,6 +467,7 @@ margin: auto;
     display: flex;
     justify-content: space-between;
     font-family: "Poppins", sans-serif;
+     color: #798189;
 }
 
 
@@ -476,4 +505,8 @@ margin: auto;
     flex-direction: column;
 } */
 
+
+.img-latest:hover{
+    zoom: 120%;
+}
 

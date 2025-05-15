@@ -1,0 +1,15 @@
+@import "./variables.scss";
+
+body{
+    display: $display;
+}
+
+p{
+    color:$T-Color;     
+    background-color: $B-Color;
+    font-size: $F-size;
+}
+
+h1{
+    color: $clr;
+}
