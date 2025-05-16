@@ -498,6 +498,7 @@ color: #798189;
     border: none;
     height: 35px;
     width: 250px;
+    color:  #798189;
 }
 
 /* .opening-hours{
@@ -506,7 +507,7 @@ color: #798189;
 } */
 
 
-.img-latest:hover{
+/* .img:hover{
     zoom: 120%;
-}
+} */
 
