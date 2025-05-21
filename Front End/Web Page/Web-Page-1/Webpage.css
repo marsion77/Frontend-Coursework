@@ -21,7 +21,7 @@ body {
     font-family: "Poppins", sans-serif;
     /* position: absolute; */
     background-size: cover;
-    background-image: url(.//mainimg.jpg)
+    background-image: url(https://preview.colorlib.com/theme/marco/img/hero-bg.jpg)
 }
 
 .navigation {
@@ -72,10 +72,10 @@ h1 {
     margin-top: 25px;
 }
 
-.inner-content{
+.inner-content {
     width: 620px;
     margin-top: -10px;
-    
+
 }
 
 .inner-comtainer {
@@ -115,9 +115,9 @@ h1 {
 
 }
 
-.menu-content{
+.menu-content {
 
-    color:#798189;
+    color: #798189;
 }
 
 /* <------------------------------------------THIRD PAGE-----------------------------------------------> */
@@ -178,19 +178,19 @@ h1 {
     row-gap: 40px; */
 
     display: flex;
-  align-items: center;
+    align-items: center;
     text-align: left;
     gap: 50px;
-   
+
 }
 
-.sub-menu-bar{
+.sub-menu-bar {
     display: flex;
 }
 
-.amt{
+.amt {
     color: #F42F2C;
-    
+
 }
 
 /* <--------------------------------------------------FOURTH PAGE---------------------------------------------------> */
@@ -229,9 +229,9 @@ border:1px solid black
     width: 100%;
     font-family: "Poppins", sans-serif;
     background-image: url(https://preview.colorlib.com/theme/marco/img/reservation-bg.jpg);
-    
 
 }
+
 
 .sub-container {
     height: 700px;
@@ -254,7 +254,7 @@ border:1px solid black
     width: 40%;
     background-color: white;
     text-align: center;
-    
+
 }
 
 .form {
@@ -364,7 +364,7 @@ border:1px solid black
     gap: 25px;
 }
 
-.img4{
+.img4 {
 
     margin-top: -100px;
 }
@@ -399,10 +399,10 @@ border:1px solid black
     margin-top: 120px;
 }
 
-.review-content-para{
-width: 520px;
-margin: auto;
-color: #798189;
+.review-content-para {
+    width: 520px;
+    margin: auto;
+    color: #798189;
 }
 
 /* <-----Next Page-----> */
@@ -445,7 +445,7 @@ color: #798189;
     margin-top: 15px;
     font-family: "Poppins", sans-serif;
     border: none;
-    font-weight:lighter;
+    font-weight: lighter;
 }
 
 .blog-para {
@@ -456,18 +456,18 @@ color: #798189;
 }
 
 
-.blog-heading:hover{
+.blog-heading:hover {
     color: red;
     cursor: pointer;
 }
 
 
-.one-latest-footer{
+.one-latest-footer {
     width: 250px;
     display: flex;
     justify-content: space-between;
     font-family: "Poppins", sans-serif;
-     color: #798189;
+    color: #798189;
 }
 
 
@@ -498,7 +498,7 @@ color: #798189;
     border: none;
     height: 35px;
     width: 250px;
-    color:  #798189;
+    color: #798189;
 }
 
 /* .opening-hours{
@@ -510,4 +510,3 @@ color: #798189;
 /* .img:hover{
     zoom: 120%;
 } */
-

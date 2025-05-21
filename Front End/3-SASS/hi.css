@@ -1,0 +1,121 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: auto;
+  height: 800px;
+  width: 100%;
+  background-color: #D6DDEA;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  border-radius: 15px;
+}
+
+.mini-container {
+  margin: auto;
+  height: 280px;
+  width: 280px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.container-one, .container-four, .container-three, .container-two {
+  margin: auto;
+  height: 200px;
+  width: 260px;
+  background-color: #E0F3FF;
+  border-radius: 15px;
+  padding-left: 10px;
+  margin-top: -14px;
+}
+
+.btn-1 {
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  background-color: #A6E7D6;
+  padding: 2px;
+  width: 105px;
+}
+
+.btn-2 {
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  background-color: #A6E7D6;
+  background-color: #FFD2B4;
+}
+
+.btn-3 {
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  background-color: #A6E7D6;
+  background-color: #D5C7FF;
+}
+
+.btn-4 {
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  background-color: #A6E7D6;
+  background-color: #A6E7D6;
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+ 
+}
+
+.container-two {
+  background-color: #FFE1CB;
+}
+
+.container-three {
+  background-color: #E2DBF9;
+}
+
+.container-four {
+  background-color: #D5F6ED;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 7px;
+  border-radius: 30px;
+}
+
+/* .explore-btn {
+  font-weight: 300px;
+}
+
+
+span {
+  color: green;
+}
+
+.exp-btn {
+  color: red;
+} */
+/*# sourceMappingURL=hi.css.map */
