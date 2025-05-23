@@ -170,4 +170,51 @@ span {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
+    padding: 100px;
+
+}
+
+.img-blog{
+margin: auto;
+    display: flex;
+    flex-direction:column;
+}
+
+
+.img-main{
+
+    height: 400px;
+    width: 320px;
+}
+
+/* next */
+
+.cleints{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.main-footer{
+
+    background-color: #F89D13;
+}
+
+.prperty-footer{
+
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.down-footer{
+    height: 600px;
+    
+    background-color: #333333;
+}
+
+.down-footer{
+
+    display: flex;
 }
