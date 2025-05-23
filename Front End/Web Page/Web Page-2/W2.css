@@ -1,0 +1,173 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    margin: 8px;
+
+}
+
+
+.contacts-head {
+    display: flex;
+    gap: 20px;
+}
+
+.social-head {
+    display: flex;
+    gap: 20px;
+}
+
+
+.nav {
+    list-style-type: none;
+}
+
+.Navigation ul {
+
+    display: flex;
+    gap: 35px;
+
+}
+
+.nav-container {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-container {
+
+    height: 600Px;
+    width: 100%;
+    background-image: url(https://preview.colorlib.com/theme/homespace/images/hero_bg_3.jpg);
+    background-size: cover;
+}
+
+.inner-form {
+
+    width: 50%;
+    height: 150px;
+    background-color: white;
+    padding: 50px;
+    position: absolute;
+    right: 10px;
+    bottom: -130px;
+}
+
+.search-container {
+
+    height: 300px;
+    width: 100%;
+    background-color: white;
+}
+
+
+select {
+    border: none;
+}
+
+span {
+    height: 40px;
+    width: 250px;
+    border: 1px solid black;
+}
+
+.search-container {
+
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-content: center;
+    gap: 25px;
+}
+
+.container-rev {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img-gallery {
+    height: 600px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-size: cover;
+    gap: 25px;
+
+}
+
+.img-one {
+    background-image: url(https://preview.colorlib.com/theme/homespace/images/img_1.jpg);
+}
+
+.img-two {
+    background-image: url(https://preview.colorlib.com/theme/homespace/images/img_2.jpg);
+}
+
+.img-three {
+    background-image: url(https://preview.colorlib.com/theme/homespace/images/img_3.jpg);
+}
+
+.img-four {
+    background-image: url(https://preview.colorlib.com/theme/homespace/images/img_4.jpg);
+}
+
+.img-five {
+    background-image: url(https://preview.colorlib.com/theme/homespace/images/img_5.jpg);
+}
+
+.img-six {
+    background-image: url(https://preview.colorlib.com/theme/homespace/images/img_6.jpg);
+}
+
+
+.img-gallery-container{
+
+    width: 80%;
+
+}
+
+.our-services{
+
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    justify-content:center;
+    gap: 30px;
+
+}
+
+
+.box{
+    text-align: center;
+    height: 150px;
+    width: 280px;
+    border: 1px solid black;
+}
+
+/* next */
+
+
+.blog-container{
+
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
