@@ -25,6 +25,7 @@ justify-content: space-between;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -184,8 +185,15 @@ color:#777777;
     width: 80%;
     margin: auto;
     display: flex;
+    /* justify-content: center; */
+    /* align-items: start; */
     margin-top: 100px;
     margin-bottom: 50px;
+    gap: 20px;
+}
+
+.prop-container p{
+ color: #8F8B88;
 }
 
 /* Break */
@@ -305,6 +313,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+gap: 15px;
 }
 
 
@@ -344,6 +353,16 @@ text-align: center;
     width: 330px;
 }
 
+.blg-img-container h4{
+
+    color: #F89D13;
+}
+
+.blg-img-container p{
+
+    color: #676767;
+}
+
 /* Break */
 
 .agent-container{
@@ -371,6 +390,8 @@ text-align: center;
     gap: 10px;
 }
 
+
+
 .agent-social{
 
     display: flex;
@@ -392,12 +413,13 @@ height: 200px;
     /* height: 200px; */
     background-color: #F89D13;
     color: white;
+    font-size: 20px;
 }
 
 .property-btn{
 
     height: 60px;
-    width: 250px;
+    width: 350px;
     border: 2px solid white;
     color: white;
     background-color: #F89D13;
@@ -406,14 +428,20 @@ height: 200px;
 
 .content-orange{
 
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 80px;
-    padding-top: 70px;
+    padding: 70px;
+   
 }
 
 /* Break */
+
+
+
 
 .main-black-container{
 
@@ -426,14 +454,12 @@ height: 200px;
 .black-container{
 
     display:flex;
-    
-    width: 80%;
-    /* margin: auto; */
-    /* justify-content:space-between; */
-    justify-content: space-between;
-    padding: 100px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-evenly;
     color: white;
-    gap: 50px;
+    gap: 30px;
+    padding: 70px;
 
 
 }
@@ -461,7 +487,7 @@ height: 200px;
 .black-one{
 
     height: auto;
-    width: 300px;
+    width: 350px;
 
 }
 
@@ -469,13 +495,13 @@ height: 200px;
 .check .last{
 
     background-color: #F89D13;
+    text-align: center;
 }
 
-/* .black-one p{
+.black-one h5{
 
-    width: 500px;
-} */
-
+    text-decoration: underline;
+}
 
 /* <------------Media Queries--------------> */
 
@@ -523,6 +549,7 @@ height: 200px;
     display: grid;
     grid-template-columns: 1fr;
 }
+
 
 .img-count{
 
