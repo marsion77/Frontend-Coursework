@@ -1,0 +1,82 @@
+.main-container {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.abou-us {
+    display: flex;
+    gap: 25px;
+}
+
+.wishlist {
+
+    display: flex;
+    gap: 25px;
+
+}
+
+.social {
+
+    display: flex;
+    gap: 15px;
+
+}
+
+.next-container {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+ul {
+
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+
+}
+
+.icons {
+
+    display: flex;
+    gap: 15px;
+}
+
+.black-head-container {
+
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+
+.black-head-container h4 {
+
+    color: white;
+    text-align: center;
+    padding: 15px;
+
+}
+
+
+.img-container{
+
+    background-image: url(https://img.freepik.com/free-vector/hand-drawn-fashion-shop-pattern-background_23-2150849923.jpg);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    /* opacity: 0.5; */
+}
+
+.first-image{
+
+    width: 100%;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+h1{
+    z-index: 2;
+}
