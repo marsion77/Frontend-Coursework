@@ -1,0 +1,68 @@
+.maincontainer{
+
+    height: 300px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.head{
+
+    font-size: large;
+    letter-spacing: 2px;
+}
+
+
+li{
+list-style-type: none;
+}
+
+.Navitems{
+
+    display: flex;
+    gap: 30px;
+    
+}
+
+.Mainnav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Navicon{
+
+    display: none;
+}
+
+@media (max-width:700px){
+
+    li{
+        display: none;
+    }
+
+.Navicon{
+
+    display: block;
+
+}
+
+.Navicon :hover{
+
+  color: black;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

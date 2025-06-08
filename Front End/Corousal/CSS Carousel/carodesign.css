@@ -1,0 +1,35 @@
+.carausal-container{
+
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.Slide-container{
+
+    display: flex;
+    width: 200%;
+    animation: magic 2s infinite;
+}
+
+.slides img{
+
+   height: 500px;
+   width: 100%;
+   background-size: cover;
+}
+
+.slides{
+
+    flex-shrink: 0;
+    width: 100%;
+}
+
+@keyframes magic{
+
+    
+      0% { transform: translateX(0%); }
+      45% { transform: translateX(0%); }
+      55% { transform: translateX(-100%); }
+      100% { transform: translateX(-100%); }
+    }

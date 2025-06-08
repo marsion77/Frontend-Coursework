@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2 Slide Carousel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div id="simpleCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./0131b46fd992eca33895614a608b9288.jpg" class="d-block w-100" height="300px"
+                        alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./32399-3840x2160-desktop-4k-avengers-wallpaper.jpg" class="d-block w-100" height="300px"
+                        alt="Slide 2">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./download.jpg"
+                        class="d-block w-100" height="300px" alt="Slide 3">
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#simpleCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#simpleCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button> -->
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#simpleCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#simpleCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#simpleCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+      </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
