@@ -16,17 +16,20 @@
 <script>
 
     let month = prompt("Enter the Month")
+    
 
 
-
-    if (month == "January" && "February" && "March" && "May" && "June" && "April") {
+    if (month == "January" || month == "February" || month == "March" || month == "May" || month == "June" || month == "April") {
         console.log('The Season is Summer');
 
-    } else if (month == "July" && "August" && "September" && "October" && "November" && "December") {
+    } else if (month == "May" || month == "June" || month == "July" || month == "August" || month == "September") {
 
-        console.log("The Season is Winter");
+        console.log("The Season is Rainy");
 
-    } else {
+    } else if (month == "October" || month == "November" || month == "December"){
+        console.log('The Season is Winter');
+        
+    }else {
 
         console.log("Invalid");
 
