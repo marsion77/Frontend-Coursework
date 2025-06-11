@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-<script>
 
-let salary1 = parseInt(prompt("Enter the First Person Salary"))
-let salary2 = parseInt(prompt("Enter the Second Person Salary"))
-let salary3 = parseInt(prompt("Enter the Third Person Salary"))
+    <script>
 
-switch(true){
+        let salary1 = parseInt(prompt("Enter the First Person Salary"))
+        let salary2 = parseInt(prompt("Enter the Second Person Salary"))
+        let salary3 = parseInt(prompt("Enter the Third Person Salary"))
 
-    case salary1 == salary2 && salary1 == salary3: 
-    console.log('All the person salaries are same');
-    break;
+        switch (true) {
 
-    case salary1 > salary2 && salary1 > salary3:
-    console.log('Person 1 salary is Greater than other 2');
-    break;
+            case salary1 == salary2 && salary1 == salary3:
+                console.log('All the person salaries are same');
+                break;
 
-    case salary2 > salary1 && salary2 > salary3:
-    console.log('Person 2 salary is Greater than other 2');
-    break;
+            case salary1 > salary2 && salary1 > salary3:
+                console.log('Person 1 salary is Greater than other 2');
+                break;
 
-    case salary3 > salary1 && salary3 > salary2:
-    console.log('Person 3 slary s Greater than other 2');
-    break;
+            case salary2 > salary1 && salary2 > salary3:
+                console.log('Person 2 salary is Greater than other 2');
+                break;
 
-    default:
-    console.log('Enter a Valid Salary');
-       
-}
+            case salary3 > salary1 && salary3 > salary2:
+                console.log('Person 3 slary s Greater than other 2');
+                break;
+
+            default:
+                console.log('Enter a Valid Salary');
+
+        }
 
 
-</script>
+    </script>
 
 </body>
+
 </html>
