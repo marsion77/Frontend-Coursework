@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let countryname = prompt("Enter The Country Name")
+        let country = countryname.toUpperCase()
+        let msg = "The Countries Currency is "
+
+        switch (country) {
+
+            case "INDIA":
+                console.log(msg + "Rupees ₹");
+                break;
+            case "CHINA":
+                console.log(msg + "Chinese Yuan ¥");
+                break;
+            case "AUSTRALIA":
+                console.log(msg + "AUD $");
+                break;
+            case "CANADA":
+                console.log(msg + "CAD $");
+                break;
+            case "USA":
+                console.log(msg + "USD $");
+                break;
+            case "RUSSIA":
+                console.log(msg + "Ruble ₽");
+                break;
+            case "FRANCE":
+                console.log(msg + "Euro €");
+                break;
+            default:
+                console.log("Invalid Input");
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let mon = prompt("Enter the Month")
+        let Month = mon.toLowerCase()
+        let msg = "Your Month Comes under "
+
+        switch (true) {
+
+            case Month == "january" || Month == "february" || Month == "march":
+                console.log(msg + "Q1");
+                break;
+            case Month == "april" || Month == "may" || Month == "june":
+                console.log(msg + "Q2");
+                break;
+            case Month == "july" || Month == "august" || Month == "september":
+                console.log(msg + "Q3");
+                break;
+            case Month == "october" || Month == "november" || Month == "december":
+                console.log(msg + "Q4");
+                break;
+            default:
+                console.log("Invalid Input");
+
+        }
+
+    </script>
+</body>
+
+</html>
