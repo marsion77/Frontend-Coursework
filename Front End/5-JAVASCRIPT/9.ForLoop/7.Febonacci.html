@@ -6,16 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    
     <script>
 
-let number=parseInt(prompt("enter the number"))
-let total=1
-for(let i=1; i<=number;i++){
-    total *=i
+let a = parseInt(prompt("Enter the Number"))
+let f = 0
+let s = 1
+
+for (let i = 0; i<=a ; i++){
+    let t = f + s
+    console.log(t); 
+    f = s
+    s= t    
 }
+
+
 </script>
-
-
 </body>
 </html>
