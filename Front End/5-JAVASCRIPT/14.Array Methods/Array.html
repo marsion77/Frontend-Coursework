@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+// Array Declation
+var a = [1,"Two",3,4,5]
+console.log(a);
+
+
+// Array Declaration Another Type
+var b = []
+b[0] = 1
+b[1] = 2
+b[2] = 3
+console.log(b);
+
+// lenghth 
+console.log(a.length,"Lenghth of a Array")
+
+// Find the Index Value
+console.log(a[2],"Index Value of Array 2");
+console.log(a[1],"Index Value of Array 1");
+
+// Convert to String Type
+console.log(a.toString(),"Converted to String");
+
+// Find the Index Value
+console.log(a.at(2));
+
+// Join a Value betweer each value
+console.log(a.join(","));
+
+// Pop to omit a last value in an Array
+a.pop()
+console.log(a);
+
+// Push to add additional value to an Array
+a.push(6)
+console.log(a);
+
+
+// Shift() used to omit the first value of an Array
+let fruits = ["Apple", "Banana" , "Grapes"]
+fruits.shift()
+console.log(fruits);
+
+
+// Unshift() used to add first value in an Array
+fruits.unshift("Orange")
+console.log(fruits);
+
+// Cancat to add 2 Array in Single
+console.log(a.concat(fruits));
+
+// Flat the Numner of Arrays
+var hello = [1,2,3,[4,5],[6,7,8]]
+console.log(hello);
+var newhelloo = hello.flat();
+console.log(newhelloo);
+
+
+var  hi = ["Aa","Bb","Cc","Dd","Ee","Ff"]
+console.log(hi);
+hi.splice(1,3)
+console.log(hi);
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
