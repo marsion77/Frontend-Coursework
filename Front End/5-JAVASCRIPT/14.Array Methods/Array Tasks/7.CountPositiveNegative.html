@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
- <script>
-   
-
-var a = [2,-1,4,6,7,8,2,7,-2,-4,-9,"Kumar",-8]
-var positive = 0
-var negative = 0
-
-for (let i = 0 ; i<a.length ; i++){
-if (a[i]===Number){
-    if (a[i] > 0)
-   positive++
-    
-} else if (a[i] <0){
-    negative++    
-}
-} console.log(positive,"Positive Number");
-console.log(negative, "Negative Number");
+    <script>
 
 
+        var a = [2, -1, 4, 6,-2,-5,7, 8, 2,0, 7, -2,-4,0,-9,6,7,6,5,-8]
+        var positive = 0
+        var negative = 0
+
+        var negativearray = []
+        var positivearray = []
+
+
+        for (let i = 0; i <= a.length; i++) {
+        
+             if (a[i] > 0) {
+                positive++
+                positivearray.push(a[i])
+            } else if (a[i] < 0) {
+                negative++
+                negativearray.push(a[i])
+            }
+           }
+        console.log(positive, "Positive Numbers are in the Array");
+        console.log(negative, "Negative Numbers are in the Array");
+        console.log(negativearray);
+        console.log(positivearray);
+        
+        
+       
+        
 
 
 
- 
-   
 
- </script>   
+
+
+
+
+    </script>
 </body>
+
 </html>

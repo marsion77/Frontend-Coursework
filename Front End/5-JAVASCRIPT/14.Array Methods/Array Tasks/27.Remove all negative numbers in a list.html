@@ -8,18 +8,17 @@
 <body>
 <script>
 
-let a = [1, 2, 3, 4, 5];
-let reversed = [];
+var a = [1,2,3,4,5,6,-1,-2,-3,-4,-5,6,7,8,9,10]
 
-for (i = a.length - 1; i>=0 ; i--){
-reversed.push(a[i])
-} 
+for (i=0; i<=a.length; i++){
+if (a[i] < 0){
+a.splice(a[i])
+// a[i] = null
+}
+} console.log(a);
 
-console.log(reversed);
- 
 
-    
 
-  </script>  
+</script>
 </body>
 </html>

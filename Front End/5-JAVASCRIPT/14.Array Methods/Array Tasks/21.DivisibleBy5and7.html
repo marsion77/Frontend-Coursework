@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+var a = [2,5,6,7,8,9,25,30,35,40,45,21,28,45,100,70]
+var both = []
+var div5 = []
+var div7 = []
+
+for (i=0; i<=a.length; i++){
+    if (a[i]%5==0 && a[i]%7==0){
+        both.push(a[i])
+    }else if (a[i]%5==0){
+        div5.push(a[i])
+    }else if (a[i]%7==0){
+    div7.push(a[i])
+    }
+} console.log(both, "Is Divided by Both 5 and 7");
+console.log(div5, "Is Divided by 5");
+console.log(div7, "Is Divided by 7");
+
+
+
+</script>    
+</body>
+</html>
