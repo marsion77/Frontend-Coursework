@@ -9,16 +9,22 @@
 <script>
 
 
-var a = [1,2,3,4,5,6,7,8,9,10]
+var a = [1,2,3,4,5,6,7,8,9,10,-1,-2,-3]
 var i = 0
-var b = []
+var negative = 0
+var positive = 0
 
-while(i=a.length-1){
-if (i>=0){
+while(i<=a.length){
+if (a[i]<0){
+negative++
+}
+else if(a[i]>0){
+    positive++
+} i++
+}console.log(negative);
+console.log(positive);
 
-}
-i--
-}
+
 
 
 

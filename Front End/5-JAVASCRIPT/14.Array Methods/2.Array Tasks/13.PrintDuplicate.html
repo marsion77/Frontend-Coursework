@@ -1,0 +1,14 @@
+<script>
+    var number1 = [1, 2, 3, 4, 5, 11]
+    var number2 = [2, 5, 7, 8, 9, 11]
+    var common = []
+    for (let i = 0; i < number1.length; i++) {
+        for (let j = 0; j < number2.length; j++) {
+            if (number1[i] === number2[j] && !common.includes(number1)) {
+                common.push(number1[i])
+            } console.log(common)
+        } 
+        
+    }
+
+</script>

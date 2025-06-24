@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+let i = 0
+var a = [5,7,21,25,49,35,3,4,5,6,7,8,99,123,50]
+
+do {
+if (a[i]%5==0 && a[i]%7==0){
+    console.log([i],"Divisible By both 5 and 7");   
+}else if (a[i] % 5 == 0){
+    console.log(a[i],'Divisible by 5');
+}else if (a[i] % 7 == 0){
+console.log(a[i],'Divisible By 7');
+} else{
+    console.log(a[i],'Not Divisible by 5 and 7');
+    
+}
+i++
+} while(i<=a.length)
+
+</script>
+
+</body>
+</html>
