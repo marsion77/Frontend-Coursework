@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+                                 // Creating Object...
+
+// Method 1
+var a = {Name: "Maarison",Age:23}
+console.log(a);
+
+// Method 2
+var b = new Object() 
+b.name= "Maarison";b.age=23
+console.log(b);
+
+// Method 3
+var c = {}
+c.name = "Maarisonn"
+c.age = 23
+console.log(c);
+
+
+                                //    Accessing the Object
+// 1. Dot 
+// 2. Square
+// 3. Object Destructing
+
+
+var d = {Name:"Maasi",Id:900}
+console.log(d.Id);      
+console.log(d["Id"]);
+
+
+
+
+ const studentData = {
+            "name":"aaa",
+            "email":"aaa@gmail.com",
+            "mobile":987539453,
+            "rank":30,
+            "average":65.5
+        }
+
+        console.log(studentData);
+        
+
+        studentData.average = 70
+        studentData.course = "CSE"
+        delete studentData.mobile
+        const{rank,average} = studentData
+        
+        
+        console.log(average);
+        console.log(studentData.average);
+        
+        console.log(studentData);
+        
+
+
+        // keys() Can Print Keys Separately
+        console.log(Object.keys(studentData));
+        // values() Can Print Values Separately
+        console.log(Object.values(studentData));
+        // entries()Can Print Keys+Values in a Separated Arrays
+        console.log(Object.entries(studentData));
+        
+        
+
+
+
+
+
+</script> 
+</body>
+</html>

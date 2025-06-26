@@ -8,21 +8,23 @@
 <body>
 <script>
 
-var sum = 0
+var sum = 0;
 
 var studentmarks = [
-    {Name:"Maarison",
-    Score:[90,83,83,100,100]},
+    {Name:"Maarison",Score:[90,83,83,100,100]},
     {Name:"Manoj", Score:[73,98,87,97,90]},
     {Name:"Maasi",Score:[100,70,57,90,92]}
 ]
 
 for (i=0;i<studentmarks.length; i++){
-
-    sum = studentmarks[i]
-
- console.log(studentmarks[i]); 
+ var getsccore = studentmarks[i].Score
+ 
+    for (a= 0; a<getsccore.length; a++)
+     sum = sum+getsccore[a]
     
+     var average = sum/getsccore.length
+    
+console.log(studentmarks[i].Name + average);
 }
 
 
