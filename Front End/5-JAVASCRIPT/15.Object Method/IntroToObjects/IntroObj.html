@@ -12,18 +12,18 @@
 
 // Method 1
 var a = {Name: "Maarison",Age:23}
-console.log(a);
+console.log(a,"Method 1 of Creating Obj");
 
 // Method 2
 var b = new Object() 
 b.name= "Maarison";b.age=23
-console.log(b);
+console.log(b, "Method 2 of Creating Obj");
 
 // Method 3
 var c = {}
 c.name = "Maarisonn"
 c.age = 23
-console.log(c);
+console.log(c, "Method 3 of Creating Obj");
 
 
                                 //    Accessing the Object
@@ -33,8 +33,8 @@ console.log(c);
 
 
 var d = {Name:"Maasi",Id:900}
-console.log(d.Id);      
-console.log(d["Id"]);
+console.log(d.Id,"Dot Method");      
+console.log(d["Id"],"[] Methd");
 
 
 
@@ -82,9 +82,12 @@ console.log(d["Id"]);
 
 
 
-            var a = parseInt(prompt("Enter a value : "))
-            var b = parseInt(prompt("Enter b value : "))
-             var c = parseInt(prompt("Enter c value : "))
+            // var a = parseInt(prompt("Enter a value : ")) 
+            // var b = parseInt(prompt("Enter b value : "))
+            //  var c = parseInt(prompt("Enter c value : "))
+            var a = 10
+            var b = 20
+            var c = 30
             function addition(x,y,z){
             console.log(x + y + z);
             }
@@ -92,7 +95,26 @@ console.log(d["Id"]);
 
 
 
-          
+// Spread operator
+
+var a = {Name:"John",
+    age: 20
+}
+
+var b = {Course:"Commerce",
+    Gender: "Male"
+}
+
+var c = {...a,...b}
+console.log(c);
+
+
+// Rest Operator
+
+let a1 = [1,2,3,4,5] 
+let [o,t,...remain]  = a1 
+console.log(remain);
+    
 
 
 

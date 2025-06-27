@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    let m = "Maarison"
+
+// Function Scope
+
+function myfunction(){
+    var a = 10
+    let b = 10
+    const c = 10
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+// console.log(a);
+// console.log(b);
+// console.log(c);
+myfunction()
+
+
+// Block Scope
+
+{
+    var x = 100
+    let z = 200
+    const y = 300
+    
+    console.log(x);
+    console.log(y);
+    console.log(z);
+    
+}
+console.log(x);
+// console.log(y);
+// console.log(z);
+
+{
+    console.log(m);
+    
+}
+
+</script>
+ 
+
+
+
+</body>
+</html>
