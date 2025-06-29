@@ -374,9 +374,9 @@ color:#777777;
 height: 180px;
 width: 300px;
 min-width:50px;
-border: 1px solid #DEE2E6;
+
+display: flex;border: 1px solid #DEE2E6;
 border-radius: 5px;
-display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
@@ -481,8 +481,7 @@ text-align: center;
 
 .agent-img-container img{
 height: 200px;
-    border-radius: 100px;
-
+border-radius: 100px;
 }
 
 /* Break */
