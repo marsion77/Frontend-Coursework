@@ -2,8 +2,13 @@ body{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: "Poppins", sans-serif;
 }
+
+/* .poppins-regular {
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+} */
 
 .Head-Container{
 width: 80%;
@@ -66,6 +71,7 @@ display: none;
 .Navigation-bar{
 display: flex;
 gap: 20px;
+letter-spacing: 1px;
 }
 
 .Navigation-bar a{
@@ -98,7 +104,7 @@ z-index: 1000;
 .Dropdown-content a {
 display: block;
 padding: 12px 16px;
-color: #333;
+color: #6F6F67;
 text-decoration: none;
 font-size: 12px;
 }
