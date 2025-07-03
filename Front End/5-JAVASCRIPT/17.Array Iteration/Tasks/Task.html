@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Array Methods with Arrow Functions</title>
+</head>
+<body>
+  <h2>Open the Console to View the Outputs</h2>
+
+  <script>
+    //forEach Questions
+
+    // 1. Print each fruit from the array
+    const fruits = ["apple", "banana", "cherry"];
+    fruits.forEach(fruit => console.log("1:", fruit));
+
+    // 2. Print the square of each number
+    const numbers1 = [2, 4, 6];
+    numbers1.forEach(num => console.log("2:", num * num));
+
+    // 3. Add 5 to each number and log the result
+    const marks1 = [45, 60, 75];
+    marks1.forEach(mark => console.log("3:", mark + 5));
+
+    // 4. Print each element with its index
+    const colors = ["red", "green", "blue"];
+    colors.forEach((color, index) => console.log("4: Index " + index + ": " + color));
+
+    // 5. Log "Item 1 is apple", etc. using forEach
+    const items = ["apple", "banana", "mango"];
+    items.forEach((item, index) => console.log("5: Item " + (index + 1) + " is " + item));
+
+
+    //reduce Questions
+
+    // 6. Find the sum of all numbers
+    const nums2 = [10, 20, 30];
+    const sum = nums2.reduce((acc, num) => acc + num, 0);
+    console.log("6: Sum =", sum);
+
+    // 7. Find the product of all numbers
+    const nums3 = [2, 3, 4];
+    const product = nums3.reduce((acc, num) => acc * num, 1);
+    console.log("7: Product =", product);
+
+    // 8. Find the longest string in the array
+    const names1 = ["Tom", "Jennifer", "Alex"];
+    const longest = names1.reduce((a, b) => a.length > b.length ? a : b);
+    console.log("8: Longest Name =", longest);
+
+    // 9. Convert an array of digits into a string
+    const digits = [1, 2, 3, 4];
+    const result = digits.reduce((acc, digit) => acc + digit, "");
+    console.log("9: Number String =", result);
+
+    // 10. Count how many times each fruit appears
+    const fruits2 = ["apple", "banana", "apple", "orange", "banana"];
+    const count = fruits2.reduce((acc, fruit) => {
+      acc[fruit] = (acc[fruit] || 0) + 1;
+      return acc;
+    }, {});
+    console.log("10: Fruit Count =", count);
+
+
+    //11–15: filter Questions
+
+    // 11. Get all even numbers from the array
+    const numbers2 = [1, 2, 3, 4, 5, 6];
+    const evens = numbers2.filter(num => num % 2 === 0);
+    console.log("11: Even Numbers =", evens);
+
+    // 12. Filter strings with length greater than 4
+    const names2 = ["John", "Eva", "Alexander", "Amy"];
+    const longNames = names2.filter(name => name.length > 4);
+    console.log("12: Names > 4 characters =", longNames);
+
+    // 13. Get marks greater than 50
+    const marks2 = [40, 55, 60, 35];
+    const passed = marks2.filter(mark => mark > 50);
+    console.log("13: Marks > 50 =", passed);
+
+    // 14. Get all negative numbers from the array
+    const nums4 = [-10, 5, -3, 7, -1];
+    const negatives = nums4.filter(n => n < 0);
+    console.log("14: Negative Numbers =", negatives);
+
+    // 15. Filter people aged 18 and above
+    const ages = [12, 25, 17, 19, 30];
+    const adults = ages.filter(age => age >= 18);
+    console.log("15: Adults (18+) =", adults);
+
+
+    //16–20: map Questions
+
+    // 16. Return the square of each number
+    const numbers3 = [2, 3, 4];
+    const squares = numbers3.map(num => num * num);
+    console.log("16: Squares =", squares);
+
+    // 17. Add "Hello" before each name
+    const names3 = ["John", "Maya"];
+    const greetings = names3.map(name => "Hello " + name);
+    console.log("17: Greetings =", greetings);
+
+    // 18. Convert prices from rupees to dollars (₹1 = $0.012)
+    const rupees = [100, 250, 500];
+    const dollars = rupees.map(r => r * 0.012);
+    console.log("18: Dollars =", dollars);
+
+    // 19. Convert all strings to uppercase
+    const words = ["hello", "world"];
+    const upper = words.map(word => word.toUpperCase());
+    console.log("19: Uppercase Words =", upper);
+
+    // 20. Create an array of name lengths
+    const names4 = ["Sam", "Alexandra", "Joe"];
+    const lengths = names4.map(name => name.length);
+    console.log("20: Name Lengths =", lengths);
+
+  </script>
+</body>
+</html>

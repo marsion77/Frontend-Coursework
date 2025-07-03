@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Task 2: Find Max</title></head>
+<body>
+
+<script>
+  const a = [25, 78, 92, 46, 38];
+
+  function findMax(arr) {
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] > max) {
+        max = arr[i];
+      }
+    }
+    console.log(max);
+  }
+
+  findMax(a);
+</script>
+
+</body>
+</html>
