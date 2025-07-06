@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sidebar Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            /* prevent body scroll */
+        }
+
+        .layout {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 300px;
+            background-color: #f2f6fc;
+            padding: 30px 20px;
+            overflow-y: auto;
+            height: 100vh;
+            /* taller than screen */
+        }
+
+        .main-content {
+            flex: 1;
+            overflow-y: auto;
+            background: #fefefe;
+            padding: 40px;
+        }
+
+        .profile-img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            margin: 10px 0;
+            display: block;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-link:hover {
+            color: #007bff;
+        }
+
+        .section {
+            margin-bottom: 80px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .section p {
+            line-height: 1.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="layout">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <img src="https://via.placeholder.com/150" alt="Profile" class="profile-img">
+            <h2>Jackson Ford</h2>
+            <p><a href="#">UI/UX Designer</a> in Philippines</p>
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Services</a>
+            <a href="#" class="nav-link">Skills</a>
+            <a href="#" class="nav-link">Education</a>
+            <a href="#" class="nav-link">Experience</a>
+            <a href="#" class="nav-link">Contact</a>
+            <a href="#" class="nav-link">Portfolio</a>
+            <a href="#" class="nav-link">Blog</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="section">
+                <h2>Page 1 - Welcome</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean blandit, augue nec facilisis
+                    consectetur, augue orci sagittis purus, nec cursus lacus neque nec est. Sed bibendum.</p>
+            </div>
+
+            <div class="section">
+                <h2>Page 2 - Services</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non orci nec lorem convallis fermentum.
+                    Suspendisse potenti. Etiam lacinia convallis elit, vel hendrerit est eleifend in.</p>
+            </div>
+
+            <div class="section">
+                <h2>Page 3 - Skills</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget nisi nec quam dictum blandit.
+                    Phasellus gravida magna in dolor cursus, a sagittis risus condimentum.</p>
+            </div>
+
+            <div class="section">
+                <h2>Page 4 - Education</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in sapien vel augue luctus malesuada.
+                    Praesent imperdiet massa a sem gravida, a fermentum erat ultricies.</p>
+            </div>
+
+            <div class="section">
+                <h2>Page 5 - Experience</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis dignissim justo, ut
+                    tincidunt lorem blandit at. Nulla ac libero nisi. Vestibulum in suscipit libero.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
