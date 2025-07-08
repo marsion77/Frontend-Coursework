@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+const Birthdate = new Date();
+Birthdate.setFullYear(2001)
+Birthdate.setMonth(6)
+Birthdate.setDate(7)
+console.log(Birthdate);
+
+
+const currentdate = new Date();
+console.log(currentdate);
+
+const ageyear = currentdate.getFullYear() - Birthdate.getFullYear();
+const agemonth = currentdate.getMonth() - currentdate.getMonth();
+const agedate = currentdate.getDate() - currentdate.getDate()
+
+
+console.log(ageyear,agemonth,agedate);
+
+
+
+
+
+
+
+// var myBirthDay;
+
+// myBirthDay.setFullYear(2001)
+// myBirthDay.setMonth(8)
+// myBirthDay.setDate(7)
+
+// console.log(myBirthDay);
+
+
+
+
+</script>
+</body>
+</html>
