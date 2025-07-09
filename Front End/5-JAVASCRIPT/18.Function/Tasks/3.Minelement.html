@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Task 3: Find Min</title></head>
+<body>
+
+<script>
+  const list3 = [55, 21, 66, 42, 18];
+
+  function findMin(arr) {
+    let min = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] < min) {
+        min = arr[i];
+      }
+    }
+    console.log(min);
+  }
+
+  findMin(list3);
+</script>
+
+</body>
+</html>

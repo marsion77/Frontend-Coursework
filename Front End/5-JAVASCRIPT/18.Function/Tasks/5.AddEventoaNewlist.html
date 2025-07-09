@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Task 5: Even Numbers</title></head>
+<body>
+
+<script>
+  const a = [15, 28, 39, 40, 52];
+
+  function getEvenNumbers(arr) {
+    const b = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 == 0) {
+        b.push(arr[i]);
+      }
+    }
+    console.log(b);
+  }
+
+  getEvenNumbers(a);
+</script>
+
+</body>
+</html>

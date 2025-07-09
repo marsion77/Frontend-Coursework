@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function f1() {
+            console.log("Normal Function");
+        }
+        f1()
+
+
+        function f2(a, b, c = 10) {
+            d = a * b * c
+            console.log(d);
+        }
+        f2(1, 2)
+
+        
+
+        var hi = (a, b) => a * b
+        console.log(hi(10, 20));
+
+        const dei = (a, b, c) => {
+            console.log(a + b);
+            console.log(b + c);
+            console.log(a + c);
+        }
+        dei(1, 2, 3)
+
+        const maari = function (a, b) {
+            console.log(a + b);
+        }
+        maari(2, 2)
+
+        var a = [1, 2, 3, 4, 5,]
+        a.forEach(element => {
+            console.log(element, "ForEach Method");
+        });
+
+
+
+        function greet(PersonName, ...many) {
+            console.log("Welcome ", PersonName);
+            console.log(many);
+        }
+        greet("Maarion", "Maasi", "Raji", "rani", "kumble", "ashwin", "harry")
+
+
+
+        for (i = 0; i <= 5; i++) {
+            console.log(i, "For Loop");
+        }
+
+
+        i = 0
+        while (i <= 5) {
+            console.log(i, "While Loop");
+            i++
+        }
+
+        i = 0
+        do {
+            console.log(i, "Do While Loop");
+
+            i++
+        }
+        while (i <= 5)
+
+
+        // Loop With Array
+
+        for (i = 0; i <= 5; i++) {
+            console.log(i, "For Loop");
+        }
+
+        for (i = 0; i <= 5; i++) {
+            if (i == 2) continue;
+            console.log(i, "For Loop Applied Continue");
+        }
+
+        for (i = 0; i <= 10; i++) {
+            if (i == 3) break;
+            console.log(i, "For Loop Applied Break");
+        }
+
+
+
+        i = 0
+        while (i <= 5) {
+            console.log(i, "While Loop");
+            i++
+           }
+           </script>   
+</body>
+</html>

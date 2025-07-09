@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><title>Task 2: Count Positive & Negative</title></head>
+<body>
+
+<script>
+  const a = [4, -1, 9, -7, 0, 12, -5,7,4,3,2,-8,-8];
+   let pos = 0, neg = 0;
+
+  function countPosNeg(arr) {
+   
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > 0) {
+        pos++;
+      } else if (arr[i] < 0) {
+        neg++;
+      }
+    }
+    console.log(pos,"Positive Numbers");
+    console.log(neg,"Negative Numbers");
+  }
+
+  countPosNeg(a);
+</script>
+
+</body>
+</html>
