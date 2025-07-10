@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+
+        // Try Catch Finally
+
+        try {
+            console.log(a + b);
+        }
+
+        catch (ErrorName) {
+            console.log("The Error is", ErrorName);
+        }
+
+        finally {
+            console.log("Default Msg");
+        }
+
+        // Try Catch Throw Finally
+
+        let i = 10;
+
+        try {
+            if (i < 0) {
+                console.log("Success");
+            }
+            throw new Error("Number is not Greater than 10 Customized")
+            // console.log("Unsuccessful");
+            
+        }
+        catch (error) {
+            console.log(error);
+
+        } finally {
+            console.log("Default Msg");
+x
+        }
+
+
+
+    </script>
+</body>
+
+</html>
