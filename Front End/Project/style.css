@@ -515,6 +515,7 @@ body {
 
 .black-container {
   display: flex;
+  flex-wrap: wrap;
   width: 80%;
   margin: auto;
   justify-content: space-evenly;
@@ -544,6 +545,7 @@ body {
 
 .last-social-footer {
   display: flex;
+  
   gap: 25px;
 }
 
@@ -560,7 +562,7 @@ body {
 }
 
 .black-one {
-  width: 350px;
+  width: 300px;
 }
 
 .footer {
