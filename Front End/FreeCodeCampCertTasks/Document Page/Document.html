@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Documentation</title>
+  <link rel="stylesheet" href="Documnet.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>JavaScript Basics</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Variables">Variables</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Loops">Loops</a>
+    <a class="nav-link" href="#Arrays">Arrays</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a versatile programming language primarily used in web development.</p>
+      <p>It enables interactive behavior on web pages and supports functional, event-driven, and object-oriented programming styles.</p>
+      <code>console.log("Hello, world!");</code>
+      <p>JavaScript runs in the browser and can interact with HTML and CSS.</p>
+      <ul>
+        <li>Client-side scripting</li>
+        <li>Lightweight and fast</li>
+        <li>Interpreted language</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables store data that can be used and modified later.</p>
+      <p>Use <code>var</code>, <code>let</code>, or <code>const</code> to declare variables.</p>
+      <code>let name = "Alice";</code>
+      <p><code>const</code> is used when the value should not change.</p>
+      <ul>
+        <li>let for block-scoped variables</li>
+        <li>const for constants</li>
+        <li>var is function-scoped (older usage)</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions allow you to encapsulate reusable blocks of code.</p>
+      <p>You can define functions using the <code>function</code> keyword or as arrow functions.</p>
+      <code>function greet(name) { return "Hello " + name; }</code>
+      <p>Arrow functions are shorter: <code>const greet = name => "Hello " + name;</code></p>
+      <ul>
+        <li>Reusable logic</li>
+        <li>Can return values</li>
+        <li>Can take parameters</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops are used to repeat actions multiple times.</p>
+      <p>Common loop types are <code>for</code>, <code>while</code>, and <code>do...while</code>.</p>
+      <code>for(let i = 0; i < 5; i++) { console.log(i); }</code>
+      <p>Loops can iterate over arrays and objects.</p>
+      <ul>
+        <li>for loop</li>
+        <li>while loop</li>
+        <li>do...while loop</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Arrays">
+      <header>Arrays</header>
+      <p>Arrays hold ordered collections of data.</p>
+      <p>Access elements using index notation.</p>
+      <code>let fruits = ["apple", "banana", "cherry"];</code>
+      <p>You can add or remove items using array methods.</p>
+      <ul>
+        <li>push()</li>
+        <li>pop()</li>
+        <li>map(), filter(), reduce()</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
