@@ -215,18 +215,19 @@ border-bottom-right-radius: 10px;
     width: 80%;
     margin: auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 100px;
 }
 
 .sub-container-A h1{
 font-size: 35px;
-width: 500px;
+width: 90%;
 }
 
 .sub-container-A {
     height: 400px;
-    width: 50%;
+    width: 40%;
     color: white;
     margin-top: 200px;
 }
@@ -240,7 +241,7 @@ width: 500px;
 }
 
 .form {
-    width: 300px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -254,7 +255,7 @@ width: 500px;
 }
 
 .field {
-    width: 300px;
+    width: 200px;
     font-family: "Poppins", sans-serif;
     font-weight: 100px;
     color: #798189;
@@ -305,6 +306,7 @@ font-size: 2rem;
     justify-content: center;
     font-family: "Poppins", sans-serif;
     box-shadow: 5px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 
 .btn-gallery {
@@ -1270,9 +1272,9 @@ grid-template-columns: repeat(1,1fr);
 width: 80%;
 }
 
-.reserv-container{
+/* .reserv-container{
 display: none;
-}
+} */
 
 
 }
