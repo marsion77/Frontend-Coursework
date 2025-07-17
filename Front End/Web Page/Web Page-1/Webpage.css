@@ -191,6 +191,7 @@ border-bottom-right-radius: 10px;
 
 .sub-menu-bar {
     display: flex;
+    width: fit-content;
 }
 
 .amt {
