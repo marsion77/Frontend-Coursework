@@ -4,6 +4,10 @@ padding: 0;
 font-family: Georgia,serif;
 }
 
+.Icon{
+display: none;
+}
+
 html{
 height: 100%;
 overflow: hidden;
@@ -23,6 +27,7 @@ width: 20%;
 height: 100vh;
 overflow-y: auto;
 line-height:1.5;
+background-color: grey;
 }
 
 ul li{
@@ -64,10 +69,13 @@ scroll-behavior:smooth;
 }
 
 .subcontainer{
-height: 500px;
-border: 2px solid black;
+height: 700px;
+border: 2px solid rgb(25, 22, 22);
 padding: 0px 20px;
 }
+
+/* Break */
+
 
 .homecontainer{
 background-image: url(./Images/rm183-wan-11.jpg);
@@ -102,46 +110,290 @@ font-weight:bolder;
 background-color: aqua;
 }
 
-.aboutcontainer{
+
+.LinkedIn-Git{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin-top: 100px;
+}
+
+
+.LinkedIn-Git a{
+text-decoration: none;
+color: rgb(11, 11, 11);
+background-color: rgb(234, 238, 238);
+height: 50px;
+width: 150px;
+text-align: center;
 align-content: center;
+border-radius: 10px;
+}
+
+/* Break */
+
+.aboutcontainer{
+background-image: url(./Images/rm183-wan-11.jpg);
+/* background-size: cover; */
 line-height: 2;
+color: white;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-@media(max-width: 380px){
-.Overall-Container{
-width:100%;
+.aboutcontainer div{
+align-content: center;
+margin-top: 200px;
 }
+
+
+/* Break */
+
+.education{
+height: fit-content;
+background-image: url(./Images/rm183-wan-11.jpg);
+background-size: cover;
+color: white;
+}
+
+.edu-content{
+display: flex;
+justify-content: space-evenly;
+gap: 40px;
+margin-top: 150px;
+margin-bottom: 150px;
+}
+
+.edu{    
+border: 1px solid grey;
+width: 500px;
+padding: 20px;
+}
+
+/* Break */
+
+.certification{
+height: fit-content;
+color: white;
+background-image: url(./Images/rm183-wan-11.jpg);
+background-size: cover;
+}
+
+.cert-content{
+display: flex;
+gap: 40px;
+justify-content: space-between;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+.cert-content div{
+border: 1px solid grey;
+width: 500px;
+padding: 20px;
+}
+
+.cert-content button{
+height: 45px;
+width: 150px;
+border-radius: 15px;
+border: none;
+background-color: aqua;
+display: block;
+margin: 20px auto;
+}
+
+.cert-content a{
+text-decoration: none;
+color: black;
+}
+
+/* Break */
+
+.project{
+height:max-content;
+/* background-image: url(./Images/rm183-wan-11.jpg); */
+background-color:rgb(135, 125, 125);
+color: white;
+}
+
+.project-content{
+display: flex;
+flex-direction: column;
+row-gap: 50px;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+.project-content div{
+width: 80%;
+margin: auto;
+padding: 20px;
+}
+
+
+.first-project{
+display: flex;
+border: 1px solid black;
+}
+
+/* Break */
+
+.work{
+height: fit-content;
+background-image: url(./Images/rm183-wan-11.jpg);
+color: white;
+}
+
+.Work-Content{
+display: flex;
+/* flex-direction: column; */
+gap: 20px;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+.Work-Content div{
+width: 500px;
+border: 1px solid black;
+padding: 20px;
+}
+
+
+.Work-Content ul li{
+list-style-type: disc;
+line-height: 1.5;
+margin-bottom: 25px;
+}
+
+
+/* Break */
+
+.conslusion{
+height: fit-content;
+background-image: url(./Images/rm183-wan-11.jpg);
+color: white;
+}
+
+.conslusion div{
+line-height: 2;
+letter-spacing: 1px;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+/* Break */
+
+
+.links{
+height: fit-content;
+background-image: url(./Images/rm183-wan-11.jpg);
+color: white;
+}
+
+.Contact-links{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+justify-content: space-evenly;
+align-items: center;
+margin-top: 150px;
+margin-bottom: 150px;
+}
+
+
+.social-contact{
+background-color: blue;
+height: 100px;
+width: 100px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.Contact-links div{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.Contact-links i{
+font-size: 40px;
+}
+
+/* Break */
+
+
+
+
+
+
+
+
+
+@media(max-width: 580px){
+
+.Icon{
+display:block;
+position: absolute;
+top: 25px;
+font-size: 30px;
+}
+
+.Icon a{
+text-decoration: none;
+color: white;
+}
+
+
 
 .Fixed-Sidebar{
-width:20%;;
+display: none;
 }
 
 .Fixed-Content-Container{
-width:80%;
+width: 100%;
 }
 
-ul li a{
+.myimage{
+display: none;
+}
+
+.aboutcontainer{
+height: fit-content;
+}
+
+.edu-content{
+flex-wrap: wrap;
+}
+
+.cert-content{
+flex-wrap: wrap;
+}
+
+.project-content{
+height:max-content;
+}
+
+.first-project img{
+display: none;
+}
+
+.Work-Content{
+flex-wrap: wrap;
+}
+
+.Contact-links{
+grid-template-columns: repeat(1,1fr);
+align-items: center;
+justify-content: center;
+}
+
+}
+
+
+/* @media (max-width: 581px) and (min-width: 1200px){
+body{
 display: none;
 }
 } */
