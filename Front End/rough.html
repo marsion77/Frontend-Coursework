@@ -1,36 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navigation</title>
   <style>
-    body {
-      background-color: #f7f7f7;
-      font-family: sans-serif;
+    ul {
+      display: flex;
+      gap: 50px;
+      position: absolute;
+      left: 2px;
     }
 
-    .edu {
-      width: 500px;
-      margin: 40px auto;
-      padding: 20px;
-      border-radius: 5px;
-      background-color: white;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
+    li {
+      list-style-type: none;
     }
 
-    .edu:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .icon {
+      display: none;
+    }
+
+    @media (max-width: 400px) {
+      .navlist {
+        display: none;
+        
+      }
+
+      .icon {
+        display: block;
+      }
+
+      .show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: #f2f2f2;
+        padding: 10px;
+        width: 100%;
+        row-gap: 5px;
+        animation: slideDown 0.5s ease;
+      }
+
+      @keyframes slideDown {
+        from {
+          transform: translateY(-20px);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="edu">
-    <h3>Bachelor of Business Administration</h3>
-    <p>2018–2021</p>
-    <p>SS Arts and Science College, Tamil Nadu</p>
-    <p>79%</p>
+  <div class="Navigation">
+    <!-- Open menu button -->
+    <div>
+      <button class="icon" type="button" onclick="navy()">=</button>
+    </div>
+
+    <!-- Navigation menu -->
+    <ul class="navlist" id="navlistt">
+      <li><a href="">Home</a></li>
+      <li><a href="">Sweet Home</a></li>
+      <li><a href="">Home</a></li>
+      <li><a href="">Sweet Home</a></li>
+      <li><a href="">Home</a></li>
+      <li><a href="">Sweet Home</a></li>
+      <li><a href="">Home</a></li>
+      <li><a href="">Sweet Home</a></li>
+
+      <!-- Close menu button -->
+      <li>
+        <button class="icon" type="button" onclick="navy()" style="background-color: red;">X</button>
+      </li>
+    </ul>
   </div>
+
+  <script>
+    function navy() {
+      document.getElementById("navlistt").classList.toggle("show");
+    }
+  </script>
 
 </body>
 </html>

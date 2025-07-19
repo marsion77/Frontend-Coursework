@@ -57,23 +57,26 @@
   <div class="Nav-Container">
 
     <div style="font-size: 20px;cursor: pointer;font-weight: 600;">HOMESPACE<span style="color: red;">.</span></div>
-    <div class="menu-bar-nav"><a href="" class="menucon" style="color: black;"><i class="fa fa-bars"></i></a></div>
-    <div class="Navigation-bar">
+    
+    <div>
 
+      <div class="menu-bar-nav"><button onclick="showbar()" type="button" style="border: none;"><i class="fa fa-bars"></i></button></div>
 
-      <a href="" style="color:#F99D13;;">Home</a>
-      <div class="Dropdown">
-        <a href="">Properties <span style="text-align: center;">&#9662;</span></a>
-        <div class="Dropdown-content">
-          <a href="">Buy</a>
-          <a href="">Rent</a>
-          <a href="">Lease</a>
-          <a href="">Menu</a>
-        </div>
-      </div>
-      <a href="">Blog</a>
-      <a href="">About</a>
-      <a href="">Contact</a>
+<script>
+function showbar(){
+document.getElementById("barr").classList.toggle("show") 
+}
+</script>
+
+      <ul class="Navigation-bar" id="barr">
+        <li><a href="" style="color:#F99D13;;">Home</a></li>
+        <li><a href="">Properties</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">About</a></li>
+        <li> <a href="">Contact</a></li>
+        <li><button style="border: none; height: 20px; width: 30px; text-align: center; background-color: red;" type="button" onclick="showbar()">X</button></li>
+      </ul>
+ 
 
     </div>
   </div>
@@ -460,6 +463,8 @@
             style="color: red;"></i></span> by <span class="Colorlib">Colorlib</span>
       </div>
     </div>
+
+
 
 </body>
 
