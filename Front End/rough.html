@@ -2,94 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Navigation</title>
+  <title>Pure HTML Accordion</title>
   <style>
-    ul {
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    details {
+      background: #222;
+      border: 1px solid #444;
+      margin-bottom: 10px;
+      padding: 15px 20px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    summary {
+      font-size: 20px;
+      cursor: pointer;
+      outline: none;
       display: flex;
-      gap: 50px;
-      position: absolute;
-      left: 2px;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    li {
-      list-style-type: none;
+    summary::after {
+      content: '+';
+      font-size: 24px;
+      font-weight: bold;
+      transition: transform 0.2s;
     }
 
-    a {
-      text-decoration: none;
-      color: black;
+    details[open] summary::after {
+      content: '×';
     }
 
-    .icon {
-      display: none;
-    }
-
-    @media (max-width: 400px) {
-      .navlist {
-        display: none;
-        
-      }
-
-      .icon {
-        display: block;
-      }
-
-      .show {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 40px;
-        left: 0;
-        background-color: #f2f2f2;
-        padding: 10px;
-        width: 100%;
-        row-gap: 5px;
-        animation: slideDown 0.5s ease;
-      }
-
-      @keyframes slideDown {
-        from {
-          transform: translateY(-20px);
-        }
-        to {
-          transform: translateY(0);
-        }
-      }
+    details > p {
+      margin-top: 15px;
+      font-size: 17px;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
 
-  <div class="Navigation">
-    <!-- Open menu button -->
-    <div>
-      <button class="icon" type="button" onclick="navy()">=</button>
-    </div>
+  <details>
+    <summary>What is Netflix?</summary>
+    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+  </details>
 
-    <!-- Navigation menu -->
-    <ul class="navlist" id="navlistt">
-      <li><a href="">Home</a></li>
-      <li><a href="">Sweet Home</a></li>
-      <li><a href="">Home</a></li>
-      <li><a href="">Sweet Home</a></li>
-      <li><a href="">Home</a></li>
-      <li><a href="">Sweet Home</a></li>
-      <li><a href="">Home</a></li>
-      <li><a href="">Sweet Home</a></li>
-
-      <!-- Close menu button -->
-      <li>
-        <button class="icon" type="button" onclick="navy()" style="background-color: red;">X</button>
-      </li>
-    </ul>
-  </div>
-
-  <script>
-    function navy() {
-      document.getElementById("navlistt").classList.toggle("show");
-    }
-  </script>
+  <details>
+    <summary>How much does Netflix cost?</summary>
+    <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month.</p>
+  </details>
 
 </body>
 </html>

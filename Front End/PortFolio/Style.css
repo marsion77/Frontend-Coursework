@@ -2,11 +2,21 @@
 display: none;
 }
 
+h1{
+  color: white;
+}
+
+.namehead{
+font-size: 55px;
+}
+
 .menu-icon {
 display: none;
 font-size: 24px;
 cursor: pointer;
 }
+
+
 
 .dropdown{
 display: none;
@@ -14,12 +24,6 @@ flex-direction: column;
 background-color: transparent;
 ;
 }
-
-.menu-toggle:checked ~ .dropdown {
-display: flex;
-}
-
-
 
 
 
@@ -37,6 +41,8 @@ html{
 height: 100%;
 overflow: hidden;
 }
+
+
 
 h1{
 text-align: center;
@@ -58,6 +64,9 @@ height: 100vh;
 overflow-y: auto;
 line-height:1.5;
 /* background-color: grey; */
+background-image:url(./Images/low-poly-grid-haikei\ \(1\).svg);
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 ul li{
@@ -67,7 +76,9 @@ line-height: 3;
 
 li a{
 text-decoration: none;
-color: black;
+color: white;
+font-weight: 800;
+text-shadow: 2px 2px 4px rgba(245, 3, 148, 0.5);
 }
 
 li a:hover{
@@ -96,11 +107,14 @@ transform:rotateY(180deg)
 width: 80%;
 overflow-y: auto;
 scroll-behavior:smooth;
+background-image:url(./Images/symbol-scatter-haikei.svg);
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .subcontainer{
 height: 700px;
-border: 2px solid rgb(25, 22, 22);
+/* border: 0.5px solid rgb(10, 10, 239); */
 padding: 0px 20px;
 }
 
@@ -112,7 +126,10 @@ padding: 0px 20px;
 background-size: cover; */
 font-family: 'Courier New', Courier, monospace;
 align-content: center;
-color:black;
+color:white;
+/* background-image:url(./Images/low-poly-grid-haikei\ \(1\).svg);
+background-repeat: no-repeat;
+background-size: cover; */
 }
 
 .resume-btn{
@@ -125,7 +142,13 @@ align-items: center;
 border-radius: 10px;
 border: none;
 margin-top: 50px;
-box-shadow: 0 8px 16px rgba(21, 18, 18, 0.2);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3),
+            0 0 20px rgba(0, 123, 255, 0.3);
+
+
+
+
+
 cursor: pointer;
 position: relative;
 }
@@ -177,13 +200,26 @@ font-weight:bolder;
 /* background-size: cover; */
 line-height: 2;
 color:black;
+/* background-image:url(./Images/low-poly-grid-haikei\ \(1\).svg);
+background-repeat: no-repeat;
+background-size: cover; */
 
 }
 
 .aboutcontainer div{
-align-content: center;
+width: 80%;
+margin: auto;
 margin-top: 100px;
 margin-bottom: 100px;
+height: fit-content;
+background-color: white;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 20px;
+padding-bottom: 20px;
+border-radius: 20px;
+
+
 }
 
 
@@ -193,7 +229,10 @@ margin-bottom: 100px;
 height: fit-content;
 /* background-image: url(./Images/rm183-wan-11.jpg);
 background-size: cover; */
-color: black;
+color: white;
+/* background-image:url(./Images/low-poly-grid-haikei\ \(1\).svg);
+background-repeat: no-repeat;
+background-size: cover; */
 
 }
 
@@ -203,6 +242,8 @@ justify-content: space-evenly;
 gap: 40px;
 margin-top: 150px;
 margin-bottom: 150px;
+color: black;
+
 }
 
 .edu{    
@@ -210,14 +251,14 @@ margin-bottom: 150px;
 width: 500px;
 padding: 20px;
 border-radius: 5px;
-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
 transition: all 0.3s ease;
 background-color: white;
 }
 
 .edu:hover {
   transform: scale(1.03);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
 }
 
 /* Break */
@@ -226,6 +267,9 @@ background-color: white;
 height: fit-content;
 color: black;
 /* background-image: url(./Images/rm183-wan-11.jpg);
+background-size: cover; */
+/* background-image:url(./Images/low-poly-grid-haikei\ \(1\).svg);
+background-repeat: no-repeat;
 background-size: cover; */
 }
 
@@ -282,6 +326,9 @@ height:max-content;
 /* background-image: url(./Images/rm183-wan-11.jpg); */
 /* background-color:rgb(135, 125, 125); */
 color:black;
+/* background-image:url(./Images/low-poly-grid-haikei\ \(1\).svg);
+background-repeat: no-repeat;
+background-size: cover; */
 }
 
 .project-content{
@@ -321,6 +368,9 @@ transition: all 0.3s ease;
 height: fit-content;
 /* background-image: url(./Images/rm183-wan-11.jpg); */
 color: black;
+/* background-image:url(./Images/low-poly-grid-haikei\ \(1\).svg);
+background-repeat: no-repeat;
+background-size: cover; */
 }
 
 .Work-Content{
@@ -361,9 +411,18 @@ margin-bottom: 25px;
 height: fit-content;
 /* background-image: url(./Images/rm183-wan-11.jpg); */
 color: black;
+/* background-image:url(./Images/low-poly-grid-haikei\ \(1\).svg);
+background-repeat: no-repeat;
+background-size: cover; */
 }
 
 .conslusion div{
+height: fit-content;
+width: 80%;
+margin: auto;
+background-color: white;
+padding: 20px;
+border-radius: 20px;
 line-height: 2;
 letter-spacing: 1px;
 margin-top: 100px;
@@ -377,6 +436,9 @@ margin-bottom: 100px;
 height: fit-content;
 /* background-image: url(./Images/rm183-wan-11.jpg); */
 color: black;
+/* background-image:url(./Images/low-poly-grid-haikei\ \(1\).svg);
+background-repeat: no-repeat;
+background-size: cover; */
 }
 
 .Contact-links{
@@ -390,7 +452,7 @@ margin-bottom: 150px;
 
 
 .social-contact{
-background-color:gainsboro;
+background-color:white;
 height: 100px;
 width: 100px;
 border-radius: 50%;
@@ -399,6 +461,14 @@ justify-content: center;
 align-items: center;
 box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 transition: all 0.5s ease;
+}
+
+.social-contact p{
+  color: white;
+}
+
+h5{
+  color: white;
 }
 
 .social-contact:hover{
@@ -423,6 +493,11 @@ font-size: 40px;
 
 @media(max-width: 580px){
 
+.menu-toggle:checked ~ .dropdown {
+display: flex;
+}
+
+
 .menu-icon a{
 text-decoration: none;
 color: white;
@@ -444,7 +519,7 @@ opacity: 5px;
 .dropdown a{
 text-decoration: none;
 background-color:#F7F7F7;
-color: black;
+color: white;
 line-height: 2;
 background-color: transparent;
 }

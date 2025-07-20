@@ -38,19 +38,21 @@
             <div class="modal-body">
 
 
-                <div><label>Name:</label><input type="text" name="" id="name"><br><br></div>
-                <div><label>Age:</label><input type="text" name="" id="age"><br><br></div>
-                <div><label>Gender</label><input type="text" name="" id="gender"><br><br></div>
-                <div><label>Email</label><input type="text" name="" id="email"><br><br></div>
-                <div><label>Mobile</label><input type="text" name="" id="mobile"></div>
+                <div><label>Name:</label><br>
+                <input type="text" name="" id="name"></div><br>
 
+                <div><label>Age:</label><br>
+                <input type="text" name="" id="age"></div><br>
 
+                <div><label>Gender</label><br>
+                <input type="text" name="" id="gender"></div><br>
 
-                
-                
-                
-               
-                
+                <div><label>Email</label><br>
+                <input type="text" name="" id="email"></div><br>
+
+                <div><label>Mobile</label><br>
+                <input type="text" name="" id="mobile"></div>
+  
             
             </div>
             <div class="modal-footer">
@@ -61,7 +63,58 @@
     </div>
 </div>
 
+<div class="result"></div>
 
+<script>
+
+    
+
+
+function submit() {
+    var getname = document.getElementById("name").value
+    var getage = document.getElementById("age").value
+    var getgender = document.getElementById("gender").value
+    var getemail = document.getElementById("email").value
+    var getmobile = document.getElementById("mobile").value
+
+
+    var allusers = []
+
+    const users = {
+        Name: getname,
+        Age: getage,
+        Gender: getgender,
+        Email: getemail,
+        Mobile: getmobile
+    }
+
+    localStorage.setItem("Userss", JSON.stringify(users))
+
+   
+    var a = localStorage.getItem("Userss")
+
+
+    var changethedata = JSON.parse(a)
+    console.log(changethedata);
+
+    allusers.push(...Object.values(users));
+    console.log(allusers);
+    
+
+        const resultDiv = document.querySelector(".result");
+    resultDiv.innerHTML = `
+        <p><strong>Name:</strong> ${changethedata.Name}</p>
+        <p><strong>Age:</strong> ${changethedata.Age}</p>
+        <p><strong>Gender:</strong> ${changethedata.Gender}</p>
+        <p><strong>Email:</strong> ${changethedata.Email}</p>
+        <p><strong>Mobile:</strong> ${changethedata.Mobile}</p>
+    `;
+}
+
+
+
+
+</script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
