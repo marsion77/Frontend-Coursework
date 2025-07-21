@@ -80,6 +80,8 @@ function submit() {
 
     var allusers = []
 
+
+
     const users = {
         Name: getname,
         Age: getage,
@@ -88,18 +90,20 @@ function submit() {
         Mobile: getmobile
     }
 
-    localStorage.setItem("Userss", JSON.stringify(users))
-
-   
-    var a = localStorage.getItem("Userss")
 
 
-    var changethedata = JSON.parse(a)
-    console.log(changethedata);
+localStorage.setItem("Userss", JSON.stringify(users))
+var a = localStorage.getItem("Userss")
+var changethedata = JSON.parse(a)
+// console.log(changethedata);
 
-    allusers.push(...Object.values(users));
-    console.log(allusers);
-    
+
+const entries = Object.entries(changethedata);
+entries.forEach(([key, value]) => {
+    allusers.push(`${key}: ${value}`);
+});
+
+ console.log(allusers);
 
         const resultDiv = document.querySelector(".result");
     resultDiv.innerHTML = `
