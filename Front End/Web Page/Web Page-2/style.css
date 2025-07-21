@@ -1,3 +1,8 @@
+html{
+scroll-behavior: smooth;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -12,6 +17,7 @@ font-family: 'Courier New', Courier, monospace;
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
+  padding-top: 15px;
 
 }
 
@@ -94,7 +100,19 @@ ul{
   color: #F99D13;
 }
 
-.Dropdown {
+
+
+.Nav-Container{
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  position: sticky;
+  top: 5px;
+  text-shadow: #CED4DA;
+}
+
+/* .Dropdown {
   position: relative;
   display: flex;
   gap: 20px;
@@ -121,7 +139,7 @@ ul{
 
 .Dropdown:hover .Dropdown-content {
   display: block;
-}
+} */
 
 .img-container-first {
   width: 100%;
@@ -300,15 +318,18 @@ ul{
 
 .New-Prop-Container {
   width: 100%;
-  height: 1000px;
   background-color: #F9F9F9;
   border: 2px solid white;
+
 }
 
 .Property-Content {
   width: 80%;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
+ 
+ 
 }
 
 
@@ -317,6 +338,7 @@ ul{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+ 
 }
 
 .indicators {
@@ -333,6 +355,7 @@ ul{
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  
 }
 
 .orange-button {
@@ -509,6 +532,7 @@ color: #F89D13;
   align-items: center;
   gap: 80px;
   padding-top: 70px;
+  padding-bottom: 50px;
   color: white;
 }
 
@@ -584,7 +608,9 @@ color: #F89D13;
   width: 80%;
   margin: auto;
   text-align: center;
+ align-content: center; 
   color: #697373;
+  padding-bottom: 20px;
 }
 
 .Colorlib {
@@ -767,7 +793,7 @@ color: #F89D13;
 .Nav-Container{
   position: sticky;
   top: 5px;
-  background-color: white;
+  /* background-color: white; */
 }
 
   .Navigation-bar {
@@ -778,10 +804,10 @@ color: #F89D13;
   display: block;
 }
 
-.show {
+/* .show {
 display: flex;
 flex-direction: column;
-top: 40px;
+top: 10px;
 left: 0;
 background-color:white;
 padding: 10px;
@@ -791,7 +817,7 @@ animation: slideDown 0.5s ease;
 position: absolute;
 z-index:1;
 font-family: 'Courier New', Courier, monospace;
-}
+} */
 
       @keyframes slideDown {
         from {
@@ -939,16 +965,25 @@ font-family: 'Courier New', Courier, monospace;
   }
 
   .property-btn {
+    display: inline-block;
     width: 220px;
     margin: auto;
-    margin-bottom: 50px;
   }
+
+.Property-Btn-Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
 
   /* Break */
 
   .main-black-container {
     /* height: fit-content; */
-    height: 600px;
+    height: 500px;
   }
 
   .black-container {
