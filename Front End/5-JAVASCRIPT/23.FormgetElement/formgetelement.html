@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"> 
 
 <head>
     <meta charset="utf-8">
@@ -99,9 +99,11 @@ var changethedata = JSON.parse(a)
 
 
 const entries = Object.entries(changethedata);
-entries.forEach(([key, value]) => {
-    allusers.push(`${key}: ${value}`);
-});
+
+    entries.forEach(([key, value]) => {
+        allusers.push(`${key}: ${value}`);
+    });
+
 
  console.log(allusers);
 
@@ -127,3 +129,5 @@ entries.forEach(([key, value]) => {
 </body>
 
 </html>
+
+
