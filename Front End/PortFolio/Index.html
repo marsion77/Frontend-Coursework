@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="Style.css">
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -54,7 +53,7 @@
        
     <!-- Icon-Bar-Ends -->
                 <h1 class="namehead">Maarison Marikozhudu</h1>
-                <p style="text-align: center; font-size: 30px;"> Aspiring Python Full Stack Developer </p>
+                <p style="text-align: center; font-size: 30px ; color: black;"> Aspiring Python Full Stack Developer </p>
                 <button class="resume-btn"><a href="./Resume Marison Marikozhundu.pdf" target="_blank">Download My
                         Resume</a></button>
 
@@ -74,7 +73,7 @@
                 <h1>About</h1>
                 <hr>
 
-                <div >
+                <div class="about-content fade-up" >
                     <p>Aspiring Full Stack Developer with a strong interest in building clean, responsive, and
                         user‑friendly web applications, I am currently undergoing hands‑on training in Python, HTML,
                         CSS, Bootstrap, JavaScript, and Git, focusing on real‑world projects to hone my technical
@@ -93,7 +92,7 @@
                 <hr>
 
 
-                <div class="edu-content">
+                <div class="edu-content fade-up">
 
                     <div class="edu">
                         <h2>Bachelor of Business Administration</h2>
@@ -117,7 +116,7 @@
                 <h1>Certifications</h1><hr>
 
 
-                <div class="cert-content">
+                <div class="cert-content fade-up">
 
 
                     <div>
@@ -149,7 +148,7 @@
 
                 <div class="project-content">
 
-                    <div class="first-project" >
+                    <div class="first-project fade-up" >
 
                         <div>
                             <h2>Restuaraunt Website</h2>
@@ -176,7 +175,7 @@
 
 
 
-                    <div class="first-project">
+                    <div class="first-project fade-up">
 
                         <div>
                             <h2>Restuaraunt Website</h2>
@@ -200,7 +199,7 @@
 
 
 
-                    <div class="first-project">
+                    <div class="first-project fade-up">
 
                         <div>
                             <h2>Restuaraunt Website</h2>
@@ -223,7 +222,7 @@
                     </div>
 
 
-                    <div class="first-project">
+                    <div class="first-project fade-up">
 
                         <div>
                             <h2>Restuaraunt Website</h2>
@@ -245,7 +244,7 @@
 
                     </div>
 
-                    <div class="first-project">
+                    <div class="first-project fade-up">
                         <div>
                             <h2>Restuaraunt Website</h2>
                             <p><strong>Stack Used:</strong>HTML, CSS, Media Queries</p>
@@ -275,7 +274,7 @@
             <div class="subcontainer work" id="work">
                 <h1>Work Experience</h1><hr>
 
-                <div class="Work-Content">
+                <div class="Work-Content fade-up">
 
                     <div>
                         <h2>Application Processing Officer</h2>
@@ -321,7 +320,7 @@
 <!-- Conclusion -->
             <div class="subcontainer conslusion" id="conslusion">
                 <h1>Conclusion</h1><hr>
-                <div>
+                <div class="fade-up">
 
                     I am enthusiastic about launching my career in the tech field as a Python Full Stack Developer. <br>I believe that my dedication to continuous learning, combined with my past work experience and current technical training, makes me a strong fit for development roles.I look forward to joining a collaborative team where I can contribute meaningfully, apply my skills to real projects, and keep evolving in both frontend and backend development.
 
@@ -334,7 +333,7 @@
                 <h1>Links</h1><hr>
 
 
-                <div class="Contact-links">
+                <div class="Contact-links fade-up">
 
 
                     <div>
@@ -382,10 +381,22 @@
 
 
     </div>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-AOS.init();
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        // observer.unobserve(entry.target); // optional: animate once
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-up, .fade-left, .fade-right, .zoom-in').forEach(el => observer.observe(el));
+});
 </script>
+
 </body>
 
 </html>

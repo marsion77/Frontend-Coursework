@@ -14,6 +14,7 @@
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
   <link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -54,7 +55,7 @@
 
 
 
-  <div class="Nav-Container">
+  <div class="Nav-Container" id="home">
 
     <div style="font-size: 20px;cursor: pointer;font-weight: 600;">HOMESPACE<span style="color: red;">.</span></div>
     
@@ -68,20 +69,20 @@ document.getElementById("barr").classList.toggle("show")
 }
 </script>
 
-      <ul class="Navigation-bar" id="barr">
-        <li><a href="" style="color:#F99D13;;">Home</a></li>
-        <li><a href="">Properties</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">About</a></li>
-        <li> <a href="">Contact</a></li>
-        <li><button style="border: none; height: 20px; width: 30px; text-align: center; background-color: red;" type="button" onclick="showbar()">X</button></li>
+      <ul class="Navigation-bar" id="barr" >
+        <li><a href="#home" style="color:#F99D13;;">Home</a></li>
+        <li><a href="#property">Properties</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#agents">Agents</a></li>
+        <li> <a href="#contact">Contact</a></li>
       </ul>
  
 
     </div>
   </div>
 
-  <div class="img-container-first">
+  <div class="img-container-first" data-aos="fade-up">
     <div class="Slides">
       <div class="Slide bg1"></div>
       <div Class="Slide bg2"></div>
@@ -97,11 +98,11 @@ document.getElementById("barr").classList.toggle("show")
   </div>
 
 
-  <div class="checklist-container">
+  <div class="checklist-container" data-aos="fade-up">
 
     <div class="checklists">
       <div class="check"><select name="" id="">
-          <option value="">1000</option>
+          <option value="">Lot Area</option>
           <option value="mercedes">800</option>
           <option value="audi">600</option>
           <option value="saab">400</option>
@@ -112,23 +113,19 @@ document.getElementById("barr").classList.toggle("show")
 
       <div class="check"><select name="" id="">
           <option value="">Property Status</option>
-          <option value="">1000</option>
-          <option value="mercedes">800</option>
-          <option value="audi">600</option>
-          <option value="saab">400</option>
-          <option value="mercedes">200</option>
-          <option value="audi">100</option>
+          <option value="">For Sale</option>
+          <option value="mercedes">For Rent</option>
+         
         </select>
       </div>
 
       <div class="check"><select name="" id="">
           <option value="">Location</option>
-          <option value="">1000</option>
-          <option value="mercedes">800</option>
-          <option value="audi">600</option>
-          <option value="saab">400</option>
-          <option value="mercedes">200</option>
-          <option value="audi">100</option>
+          <option value="">United Kingdom</option>
+          <option value="mercedes">Canada</option>
+          <option value="audi">Belgium</option>
+          <option value="saab">United States</option>
+          
         </select></div>
 
       <div class="check"><select name="" id="">
@@ -148,7 +145,7 @@ document.getElementById("barr").classList.toggle("show")
           <option value="audi">3</option>
           <option value="saab">4</option>
           <option value="mercedes">5</option>
-          <option value="audi">6</option>
+          <option value="audi">6+</option>
         </select></div>
 
       <div class="check"><select name="" id="">
@@ -158,7 +155,7 @@ document.getElementById("barr").classList.toggle("show")
           <option value="audi">3</option>
           <option value="saab">4</option>
           <option value="mercedes">5</option>
-          <option value="audi">6</option>
+          <option value="audi">6+</option>
         </select></div>
 
       <div class="check"> <input type="range" min="10000" max="1000000"></div>
@@ -168,7 +165,7 @@ document.getElementById("barr").classList.toggle("show")
     </div>
 
 
-    <div class="prop-container">
+    <div class="prop-container" data-aos="fade-up">
       <div><i class="fa fa-building-o" style="color:#F89D13 ; font-size:40px;"></i></div>
       <div>
         <h5>Wide Range of Properties</h5>
@@ -197,9 +194,9 @@ document.getElementById("barr").classList.toggle("show")
 
 
 
-    <div class="Property-Container">
+    <div class="Property-Container" id="property">
 
-      <div>
+      <div data-aos="fade-up">
         <i class="fa fa-building-o" style="color:#F89D13 ; font-size:40px;"></i>
         <h5>Wide Range of Properties</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem sint debitis porro quae dolorum
@@ -207,13 +204,13 @@ document.getElementById("barr").classList.toggle("show")
       </div>
 
 
-      <div> <i class="fa fa-building-o" style="color:#F89D13 ; font-size:40px;"></i>
+      <div data-aos="fade-up"> <i class="fa fa-building-o" style="color:#F89D13 ; font-size:40px;"></i>
         <h5>Rent or Sale</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem sint debitis porro quae dolorum
           neque.</p>
       </div>
 
-      <div>
+      <div data-aos="fade-up">
         <i class="fa fa-building-o" style="color:#F89D13 ; font-size:40px;"></i>
         <h5>Property Location</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem sint debitis porro quae dolorum
@@ -228,7 +225,7 @@ document.getElementById("barr").classList.toggle("show")
 
         <h3 style="letter-spacing: 3px;">NEW PROPERTIES FOR YOU</h3>
 
-        <div class="Property-Image-Container">
+        <div class="Property-Image-Container" data-aos="fade-up">
 
           <div><img src="./Images/img_1.jpg.webp" alt="" width="100%"></div>
           <div><img src=".//Images/img_2.jpg.webp" alt="" width="100%"></div>
@@ -238,7 +235,7 @@ document.getElementById("barr").classList.toggle("show")
           <div><img src="./Images/img_6.jpg.webp" alt="" width="100%"></div>
         </div>
 
-        <div class="indicators">
+        <div class="indicators" data-aos="fade-up">
           <button class="indicator-btn orange-button">1</button>
           <button class="indicator-btn">2</button>
           <button class="indicator-btn">3</button>
@@ -253,10 +250,10 @@ document.getElementById("barr").classList.toggle("show")
       </div>
     </div>
 
-    <div class="our-serivices-container">
+    <div class="our-serivices-container" id="service">
 
       <h3 style="letter-spacing: 3px;text-align: center;">OUR SERIVICES</h3>
-      <div class="Learn-More-Container">
+      <div class="Learn-More-Container" data-aos="fade-up">
 
         <div class="Learn-More-Box">
           <i class="fa fa-building-o" style="color:#F89D13 ; font-size:40px;"></i>
@@ -297,14 +294,14 @@ document.getElementById("barr").classList.toggle("show")
       </div>
     </div>
 
-    <div class="Our-Blog-Container">
+    <div class="Our-Blog-Container" id="blog">
 
       <div class="Our-Blog-Content">
 
         <h3 style="letter-spacing: 3px;text-align: center;">OUR BLOG</h3>
 
         <div class="Our-Blog-Image-Container">
-          <div>
+          <div data-aos="fade-left">
             <img src=".//Images/img_4.jpg.webp" alt="" width="100%">
             <div class="Our-Blog-Image-Container-Content">
               <p>Jan 20th, 2019</p>
@@ -314,7 +311,7 @@ document.getElementById("barr").classList.toggle("show")
             </div>
           </div>
 
-          <div>
+          <div data-aos="fade-up" >
             <img src=".//Images/img_3.jpg.webp" alt="" width="100%">
             <div class="Our-Blog-Image-Container-Content">
               <p>Jan 20th, 2019</p>
@@ -324,7 +321,7 @@ document.getElementById("barr").classList.toggle("show")
             </div>
           </div>
 
-          <div>
+          <div data-aos="fade-right">
             <img src=".//Images/img_4.jpg.webp" alt="" width="100%">
             <div class="Our-Blog-Image-Container-Content">
               <p>Jan 20th, 2019</p>
@@ -343,13 +340,13 @@ document.getElementById("barr").classList.toggle("show")
 
     </div>
 
-    <div class="Our-Agents-Container">
+    <div class="Our-Agents-Container" id="agents">
 
       <div class="Our-Agents-Container-Content">
         <h3 style="letter-spacing: 3px;text-align: center;">OUR AGENTS</h3>
         <div class="agent-img-container">
 
-          <div>
+          <div data-aos="fade-up">
             <img src="./Images/person_2.jpg.webp" alt="" width="100%">
             <h4>Megan Smith</h4>
             <p>Real Estate Agent</p>
@@ -363,7 +360,7 @@ document.getElementById("barr").classList.toggle("show")
           </div>
 
 
-          <div>
+          <div data-aos="fade-up">
             <img src="./Images/person_1.jpg.webp" alt="" width="100%">
             <h4>Megan Smith</h4>
             <p>Real Estate Agent</p>
@@ -406,7 +403,7 @@ document.getElementById("barr").classList.toggle("show")
     </div>
 
 
-    <div class="Orange-Container">
+    <div class="Orange-Container" id="contact" data-aos="fade-up">
 
       <div class="Orange-Container-Content">
         <div>
@@ -414,7 +411,7 @@ document.getElementById("barr").classList.toggle("show")
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
 
-        <div class="Property-Btn-Container">
+        <div class="Property-Btn-Container" data-aos="fade-up">
           <button class="property-btn">See Properties</button>
         </div>
       </div>
@@ -422,7 +419,7 @@ document.getElementById("barr").classList.toggle("show")
     </div>
 
 
-    <div class="main-black-container">
+    <div class="main-black-container" data-aos="fade-up">
     
       <div class="black-container">
         <div class="black-one">
@@ -459,11 +456,18 @@ document.getElementById("barr").classList.toggle("show")
           </div>
         </div>
       </div>
-      <div class="footer">Copyright ©2025 All rights reserved | This template is made with <span><i class="fa fa-heart-o"
+
+        <div class="footer">Copyright ©2025 All rights reserved | This template is made with <span><i class="fa fa-heart-o"
             style="color: red;"></i></span> by <span class="Colorlib">Colorlib</span>
       </div>
+ 
     </div>
 
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  
 
 
 </body>
