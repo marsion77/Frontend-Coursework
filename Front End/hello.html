@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LocalStorage Form</title>
+</head>
+<body>
+
+<form onsubmit="submitUser();">
+  <label>Name:</label>
+  <input type="text" id="name">
+  <label>Age:</label>
+  <input type="text" id="age">
+  <button type="submit">Submit</button>
+</form>
+
+
+<table border="1" cellpadding="10" style="margin-top: 30px;">
+  <thead>
+    <tr><th>Name</th><th>Age</th></tr>
+  </thead>
+  <tbody id="store">
+
+  </tbody>
+</table>
+
+<script>
+function submitUser() {
+  let name = document.getElementById("name").value.trim();
+  let age = document.getElementById("age").value.trim();
+
+  if (name === "" || age === "") {
+    alert("Enter All the Blanks Please");
+    return;
+  }
+
+  let allUsers = JSON.parse(localStorage.getItem("Users")) || [];
+
+  const newUser = { Name: name,
+     Age: age };
+
+  allUsers.push(newUser);
+
+  localStorage.setItem("Users", JSON.stringify(allUsers));
+
+  displayUsers();
+//   localStorage.remove()
+}
+
+
+
+function displayUsers() {
+
+  const allUsers = JSON.parse(localStorage.getItem("Users")) || [];
+
+  let rows = "";
+
+  allUsers.forEach(user => {
+    rows = rows + `<tr><td>${user.Name}</td><td>${user.Age}</td></tr>`;
+  });
+
+  document.getElementById("store").innerHTML = rows;
+}
+
+window.onload = displayUsers;
+</script>
+
+</body>
+</html>
