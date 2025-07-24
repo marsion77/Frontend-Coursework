@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LocalStorage Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1 style="text-align: center;">Form...</h1>
+
+<div class="main-container">
+
+    <div class="form-container">
+  <form class="form">
+  <label>Name:</label>
+  <input type="text" id="name" placeholder="Enter Your Name">
+  <span id="name-error"></span>  
+
+  <label>Age:</label>
+  <input type="text" id="age" placeholder="Enter Your Age">
+  <span id="age-error"></span>
+
+  <label>Gender:</label>
+  <input type="text" id="gender" placeholder="Enter Your Gender">
+  <span id="gender-error"></span>
+
+  <label>Email:</label>
+  <input type="text" id="email" placeholder="Enter Your Email">
+  <span id="email-error"></span>
+
+  <label>Phone:</label>
+  <input type="text" id="phone" placeholder="Enter Your Mobile">
+  <span id="phone-error"></span>
+  
+  <div class="btn"><button class="btnn" type="submit" onclick="submitUser(event);" >Submit</button></div>
+</form>
+</div>
+
+
+<div class="table-container">
+    <table border="1" cellpadding="10" style="margin-top: 30px;">
+  <thead class="tablehead">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody id="store">
+
+  </tbody>
+</table>
+</div>
+</div>
+
+
+<script src="Script.js"></script>
+</body>
+</html>
