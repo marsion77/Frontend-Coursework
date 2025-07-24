@@ -8,12 +8,12 @@
 
 <body>
 
-  <h1 style="text-align: center;">Form...</h1>
+  <h1 style="text-align: center;">Form</h1>
 
 <div class="main-container">
 
     <div class="form-container">
-  <form class="form">
+  <form class="form" id="form">
   <label>Name:</label>
   <input type="text" id="name" placeholder="Enter Your Name">
   <span id="name-error"></span>  
@@ -33,6 +33,10 @@
   <label>Phone:</label>
   <input type="text" id="phone" placeholder="Enter Your Mobile">
   <span id="phone-error"></span>
+
+  <label>Create Password:</label>
+  <input type="password" id="password">
+  <span id="password-error">Pasword Must Be 8 Characters <br>Need Altease 1 Numbers <br>Need Atleast 1 Special Characters</span>
   
   <div class="btn"><button class="btnn" type="submit" onclick="submitUser(event);" >Submit</button></div>
 </form>
