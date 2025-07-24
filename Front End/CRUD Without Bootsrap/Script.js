@@ -1,8 +1,8 @@
 
 
-function submitUser(event) {
+function submitUser(Event) {
 
-    if (event) event.preventDefault();
+  Event.preventDefault()
 
   let name = document.getElementById("name").value 
   let age = document.getElementById("age").value
