@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LocalStorage Form</title>
+</head>
+<style>
+  .form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 1.5;
+  }
+
+  .form input{
+  width: 300px;
+  }
+
+  .btn{
+    margin-top: 30px;
+   width: 300px;
+   text-align: center;
+
+  }
+</style>
+<body>
+
+<form onsubmit="submitUser();" class="form">
+  <label>Name:</label><input type="text" id="name" placeholder="Enter Your Name"><span></span>                                                              
+  <label>Age:</label><input type="text" id="age" placeholder="Enter Your Age"><span></span>
+  <label>Gender:</label><input type="text" id="gender" placeholder="Enter Your Gender"><span></span>
+  <label>Email:</label><input type="text" id="email" placeholder="Enter Your Email"><span></span>
+  <label>Phone:</label><input type="text" id="phone" placeholder="Enter Your Mobile">
+  
+  <div class="btn"><button type="submit">Submit</button></div>
+</form>
+
+
+<table border="1" cellpadding="10" style="margin-top: 30px;">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody id="store">
+
+  </tbody>
+</table>
+
+<script>
+function submitUser() {
+  let name = document.getElementById("name").value
+  let age = document.getElementById("age").value
+  let gender = document.getElementById("gender").value
+  let email = document.getElementById("email").value
+  let phone = document.getElementById("phone").value
+
+  if (name === "" || age === "") {
+    alert("Enter All the Blanks Please");
+    return;
+  }
+
+  let allUsers = JSON.parse(localStorage.getItem("Users")) || [];
+
+  const newUser = { 
+    Name: name,
+    Age: age,
+    Gender: gender,
+    Email: email,
+    Phone: phone   };
+
+  allUsers.push(newUser);
+
+  localStorage.setItem("Users", JSON.stringify(allUsers));
+
+  displayUsers();
+}
+
+function displayUsers() {
+
+  const allUsers = JSON.parse(localStorage.getItem("Users")) || [];
+
+  let rows = "";
+
+  allUsers.forEach(user => {
+    rows = rows + `<tr>
+    <td>${user.Name}</td>
+    <td>${user.Age}</td>
+    <td>${user.Gender}</td>
+    <td>${user.Email}</td>
+    <td>${user.Phone}</td>
+    </tr>`;
+  });
+
+  document.getElementById("store").innerHTML = rows;
+}
+
+window.onload = displayUsers;
+</script>
+
+</body>
+</html>
