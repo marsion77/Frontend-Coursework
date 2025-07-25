@@ -103,6 +103,7 @@ function submitUser(Event) {
     isvalid = false
   } else if (!passwordregex.test(password)) {
     passworderror.innerHTML = "Please Enetr a Valid Password"
+    isvalid = false
   }
 
 
