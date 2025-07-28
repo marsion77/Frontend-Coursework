@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manupulation</title>
+    <style>
+        div {
+            height: 300px;
+            width: 80%;
+            margin: auto;
+
+            /* border: 1px solid black; */
+            /* text-align: center; */
+        }
+
+        button {
+            border-radius: 10px;
+            text-align: center;
+            height: 50px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="container">
+
+        <h1 id="head">Introduction To DOM Manupulation</h1>
+        <img src="/download.jpg" alt="" id="img"><br><br>
+        <button id="button" onclick="change()">Click Me to change the Title</button>
+
+        <p onclick="changetext(this)">Lorem ipsum dolor sit amet.</p>
+
+        <button id="date-btn" onclick="displaydate(this)">Click for Todays Date</button> <br> <br>
+
+        <button id="hover-btn" onmouseover="hover(this)" onmouseout="nohover(this)"> Hover Me </button>
+
+    </div>
+
+
+    <script>
+
+
+        function change() {
+            // Changing Element Text
+            document.getElementById("head").innerHTML = "Welcome"
+            document.getElementById("button").innerHTML = "You have Changed the Text"
+
+
+            // Changing Element Attributes
+            document.getElementById("img").src = "/download (1).jpg"
+
+            // Changing ELement Style
+            document.getElementById("container").style.textAlign = "center"
+            document.getElementById("container").style.fontFamily = "monospace"
+            document.getElementById("button").style.fontFamily = "monospace"
+            document.getElementById("button").style.color = "red"
+
+        }
+
+        function changetext(text) {
+            text.innerHTML = "Welcome"
+        }
+
+        function displaydate(design) {
+            document.getElementById("date-btn").innerHTML = Date()
+            design.style.color = "aqua"
+        }
+
+
+        function hover(tag) {
+            tag.innerText = "Thank You!!!"
+        }
+
+        function nohover(tag) {
+            tag.innerHTML = "Hover Me!!!"
+        }
+
+    </script>
+
+</body>
+
+</html>
