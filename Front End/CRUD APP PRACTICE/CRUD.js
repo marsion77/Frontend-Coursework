@@ -1,161 +1,145 @@
 
+  function submitForm(event) {
+    event.preventDefault();
 
-function submitform(Event) {
+    let name = document.getElementById("name").value.trim();
+    let age = document.getElementById("age").value.trim();
+    let gender = document.getElementById("gender").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let phone = document.getElementById("phone").value.trim();
 
-  Event.preventDefault()
+    // Error elements
+    let nameerr = document.getElementById("name-error");
+    let ageerr = document.getElementById("age-error");
+    let gendererr = document.getElementById("gender-error");
+    let emailerr = document.getElementById("email-error");
+    let phoneerr = document.getElementById("phone-error");
 
-  let name = document.getElementById("name").value
-  let age = document.getElementById("age").value
-  let gender = document.getElementById("gender").value
-  let email = document.getElementById("email").value
-  let phone = document.getElementById("phone").value
-  let password = document.getElementById("password").value
+    // Reset errors
+    nameerr.innerHTML = "";
+    ageerr.innerHTML = "";
+    gendererr.innerHTML = "";
+    emailerr.innerHTML = "";
+    phoneerr.innerHTML = "";
+
+     isvalid = true;
+
+    // Regex
+    let nameRegex = /^[a-zA-Z\s]+$/;
+    let ageRegex = /^[0-9]{1,3}$/;
+    let genderRegex = /^(male|female)$/i;
+    let emailRegex = /^[a-zA-Z0-9._]+@[a-zA-Z0-9]+\.(com)$/;
+    let phoneRegex = /^[6-9][0-9]{9}$/;
+
+    // Validations
+    if (name === "") {
+      nameerr.innerHTML = "Please enter the name";
+      isvalid = false;
+    } else if (!nameRegex.test(name)) {
+      nameerr.innerHTML = "Enter a valid name";
+      isvalid = false;
+    }
+
+    if (age === "") {
+      ageerr.innerHTML = "Please enter the age";
+      isvalid = false;
+    } else if (!ageRegex.test(age)) {
+      ageerr.innerHTML = "Enter a valid age";
+      isvalid = false;
+    }
+
+    if (gender === "") {
+      gendererr.innerHTML = "Please enter the gender";
+      isvalid = false;
+    } else if (!genderRegex.test(gender)) {
+      gendererr.innerHTML = "Enter either 'male' or 'female'";
+      isvalid = false;
+    }
+
+    if (email === "") {
+      emailerr.innerHTML = "Please enter the email";
+      isvalid = false;
+    } else if (!emailRegex.test(email)) {
+      emailerr.innerHTML = "Enter a valid email";
+      isvalid = false;
+    }
+
+    if (phone === "") {
+      phoneerr.innerHTML = "Please enter the phone number";
+      isvalid = false;
+    } else if (!phoneRegex.test(phone)) {
+      phoneerr.innerHTML = "Enter a valid 10-digit phone number starting with 6-9";
+      isvalid = false;
+    }
+
+    if (isvalid === false){
+        return false;
+    } else if (!isvalid === false){
+        alert("Form Submitted Succesfully")
+        // document.getElementById("userModal").innerHTML = ""
+
+    }
 
 
-  var nameerr = document.getElementById("name-error");
-  var ageerr = document.getElementById("age-error");
-  var gendererr = document.getElementById("gender-error");
-  var emailerr = document.getElementById("email-error");
-  var phoneerr = document.getElementById("phone-error");
-  var passworderror = document.getElementById("password-error")
-
-  nameerr.innerHTML = ""
-  ageerr.innerHTML = ""
-  gendererr.innerHTML = ""
-  emailerr.innerHTML = ""
-  phoneerr.innerHTML = ""
-  passworderror.innerHTML = ""
 
 
-  isvalid = true
+    // Save to localStorage
+    let allUsers = JSON.parse(localStorage.getItem("users")) || [];
 
+    const newUser = {
+      Name: name,
+      Age: age,
+      Gender: gender,
+      Email: email,
+      Phone: phone
+    };
 
-  var nameagex = /[a-zA-Z_]/
-  var ageregex = /[0-9]/
-  var genderregex = /^(male|female)$/i
-  var emailregex = /^[a-zA-Z0-9._]+@[a-zA-Z0-9]+\.(com)$/
-  // var phoneregex = /^ [6 - 9][0 - 9]{ 9}$/
-  var phoneregex = /[0-9]/
-  var passwordregex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/
+    allUsers.push(newUser);
+    localStorage.setItem("users", JSON.stringify(allUsers));
 
+    displayUsers();
 
+     // Clear input fields
+document.getElementById("name").value = "";
+document.getElementById("age").value = "";
+document.getElementById("gender").value = "";
+document.getElementById("email").value = "";
+document.getElementById("phone").value = "";
 
-
-
-
-  // Name Validation
-
-  if (name === "") {
-    nameerr.innerHTML = "Please Enter the Name"
-    isvalid = false
-  } else if (!nameagex.test(name)) {
-    nameerr.innerHTML = "Please Enter Valid Name"
-    isvalid = false
   }
 
+  function displayUsers() {
+    const allUsers = JSON.parse(localStorage.getItem("users")) || [];
 
-  // Age Validation
+    let rows = "";
+    allUsers.forEach((user, index) => {
+      rows += `
+        <tr>
+          <td>${index + 1}</td>
+          <td>${user.Name}</td>
+          <td>${user.Age}</td>
+          <td>${user.Gender}</td>
+          <td>${user.Email}</td>
+          <td>${user.Phone}</td>
+          <td><button>Edit</button></td>
+          <td><button>Delete</button></td>
+        </tr>
+      `;
+    });
 
-  if (age === "") {
-    ageerr.innerHTML = "Please Enter the Age"
-    isvalid = false
-  }
-  else if (!ageregex.test(age)) {
-    ageerr.innerHTML = "Pease Enter the Valid Age"
-    isvalid = false
-  }
+    document.getElementById("store").innerHTML = rows;
 
-
-  // Gender Validation
-
-  if (gender === "") {
-    gendererr.innerHTML = "Please Enter the Gender"
-    isvalid = false
-  } else if (!genderregex.test(gender)) {
-    gendererr.innerHTML = "Please Enter Valid Gender"
-    isvalid = false
-  }
-
-  // Email Validation
-
-  if (email === "") {
-    emailerr.innerHTML = "Please Enter the Email"
-    isvalid = false
-  } else if (!emailregex.test(email)) {
-    emailerr.innerHTML = "Please Enetr Valid Email"
-    isvalid = false
   }
 
+function edituser(){
 
-  // Phone Validation
+let allusers = JSON.parse(localStorage.getItem("users")) || []
 
-  if (phone === "") {
-    phoneerr.innerHTML = "Please Enter the Phone"
-    isvalid = false
-  } else if (!phoneregex.test(phone)) {
-    phoneerr.innerHTML = "Please Enter a Valid Phone Number"
-    isvalid = false
-  }
+allusers[index].Name = "Updated Name"
 
-
-  if (password === "") {
-    passworderror.innerHTML = "Please Create Your Password"
-    isvalid = false
-  } else if (!passwordregex.test(password)) {
-    passworderror.innerHTML = "Please Enetr a Valid Password"
-    isvalid = false
-  }
-
-
-
-  if (isvalid === false) {
-    return false
-
-  } else if (isvalid === true) {
-    alert("Form Submitted Succesfully")
-    document.getElementById("form").reset()
-  }
-
-
-
-  let allUsers = JSON.parse(localStorage.getItem("Users")) || [];
-
-  const newUser = {
-    Name: name,
-    Age: age,
-    Gender: gender,
-    Email: email,
-    Phone: phone
-  };
-
-  allUsers.push(newUser);
-
-  localStorage.setItem("Users", JSON.stringify(allUsers));
-
-
-
-  displayUsers();
-}
-
-function displayUsers() {
-
-  const allUsers = JSON.parse(localStorage.getItem("Users")) || [];
-
-  let rows = "";
-
-  allUsers.forEach(user => {
-    rows = rows + `<tr>
-    <td>${user.Name}</td>
-    <td>${user.Age}</td>
-    <td>${user.Gender}</td>
-    <td>${user.Email}</td>
-    <td>${user.Phone}</td>
-    </tr>`;
-  });
-
-  document.getElementById("store").innerHTML = rows;
-
+localStorage.setItem("users",JSON.stringify(allusers))
 
 }
 
-window.onload = displayUsers;
+  window.onload = displayUsers;
+
