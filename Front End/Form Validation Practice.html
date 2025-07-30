@@ -123,32 +123,48 @@ function submitForm(event) {
   let emailRegex = /^[a-zA-Z0-9._]+@[a-zA-Z0-9]+\.(com)$/;
   let phoneRegex = /^[6-9][0-9]{9}$/;
 
-  if (name === "" || !nameRegex.test(name)) {
-    nameerr.innerHTML = "Enter a valid name";
-    isvalid = false;
-  }
+    // Validations
+    if (name === "") {
+      nameerr.innerHTML = "Please enter the name";
+      isvalid = false;
+    } else if (!nameRegex.test(name)) {
+      nameerr.innerHTML = "Enter a valid name";
+      isvalid = false;
+    }
 
-  if (age === "" || !ageRegex.test(age)) {
-    ageerr.innerHTML = "Enter a valid age";
-    isvalid = false;
-  }
+    if (age === "") {
+      ageerr.innerHTML = "Please enter the age";
+      isvalid = false;
+    } else if (!ageRegex.test(age)) {
+      ageerr.innerHTML = "Enter a valid age";
+      isvalid = false;
+    }
 
-  if (gender === "" || !genderRegex.test(gender)) {
-    gendererr.innerHTML = "Enter 'male' or 'female'";
-    isvalid = false;
-  }
+    if (gender === "") {
+      gendererr.innerHTML = "Please enter the gender";
+      isvalid = false;
+    } else if (!genderRegex.test(gender)) {
+      gendererr.innerHTML = "Enter either 'male' or 'female'";
+      isvalid = false;
+    }
 
-  if (email === "" || !emailRegex.test(email)) {
-    emailerr.innerHTML = "Enter a valid email";
-    isvalid = false;
-  }
+    if (email === "") {
+      emailerr.innerHTML = "Please enter the email";
+      isvalid = false;
+    } else if (!emailRegex.test(email)) {
+      emailerr.innerHTML = "Enter a valid email";
+      isvalid = false;
+    }
 
-  if (phone === "" || !phoneRegex.test(phone)) {
-    phoneerr.innerHTML = "Enter a valid phone";
-    isvalid = false;
-  }
-
-  if (!isvalid) {
+    if (phone === "") {
+      phoneerr.innerHTML = "Please enter the phone number";
+      isvalid = false;
+    } else if (!phoneRegex.test(phone)) {
+      phoneerr.innerHTML = "Enter a valid 10-digit phone number starting with 6-9";
+      isvalid = false;
+    }
+    
+  if (isvalid ==false) {
     return false;
   }
 
