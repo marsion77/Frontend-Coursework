@@ -1,0 +1,45 @@
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.main-container{
+background-color: rgb(13, 95, 167);
+width: 100%;
+height: 100vh;
+align-content: center;
+}
+
+.calci-container{
+height: fit-content;
+width: fit-content;
+margin: auto;
+text-align: center;
+padding: 20px;
+border: 1px solid black;
+background-color: rgb(211, 126, 16);
+
+}
+
+input{
+width:350px ;
+height: 80px;
+text-align: end;
+font-size: 30px;
+border: none;
+border-radius: 10px;
+}
+
+/* input::placeholder{
+font-size: 20px;
+} */
+
+button{
+margin: 15px;
+height: 50px;
+width: 50px;
+border-radius: 50%;
+border: none;
+background-color: aquamarine;
+}
