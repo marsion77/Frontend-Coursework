@@ -12,9 +12,9 @@
 
     <div>
 
-        <button id="btn" onclick="change()">Click Me...</button>
+        <button id="btn" onclick="change()">Click Me...</button> <br> <br>
 
-        <button id=""></button>
+        <button id="" onclick="back()">Go Back/Forward Button</button>
 
     </div>
 
@@ -33,7 +33,13 @@
         // console.log(window.location.href);
         function change() {
             window.location.assign("https://www.w3schools.com/js/js_window_location.asp")
+           
         }
+
+        function back(){
+        window.history.back()
+        }
+console.log( );
 
 
 

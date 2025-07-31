@@ -19,12 +19,12 @@ function submitUser(Event) {
   var phoneerr = document.getElementById("phone-error");
   var passworderror = document.getElementById("password-error")
 
-  nameerr.innerHTML = ""
-  ageerr.innerHTML = ""
-  gendererr.innerHTML = ""
-  emailerr.innerHTML = ""
-  phoneerr.innerHTML = ""
-  passworderror.innerHTML = ""
+  // nameerr.innerHTML = ""
+  // ageerr.innerHTML = ""
+  // gendererr.innerHTML = ""
+  // emailerr.innerHTML = ""
+  // phoneerr.innerHTML = ""
+  // passworderror.innerHTML = ""
 
 
   isvalid = true
@@ -116,6 +116,12 @@ function submitUser(Event) {
     document.getElementById("form").reset()
   }
 
+  nameerr.innerHTML = ""
+  ageerr.innerHTML = ""
+  gendererr.innerHTML = ""
+  emailerr.innerHTML = ""
+  phoneerr.innerHTML = ""
+  passworderror.innerHTML = ""
 
 
   let allUsers = JSON.parse(localStorage.getItem("Users")) || [];

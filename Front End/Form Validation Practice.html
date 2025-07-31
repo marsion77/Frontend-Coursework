@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,210 +8,211 @@
   <link rel="stylesheet" href="CRUD.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- Button to open modal -->
-<div class="btncontainer text-center p-3">
-  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userModal">Open Form</button>
-</div>
+  <!-- Button to open modal -->
+  <div class="btncontainer text-center p-3">
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#userModal">Open Form</button>
+  </div>
 
-<!-- Modal -->
-<div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
+  <!-- Modal -->
+  <div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
-      <div class="modal-header">
-        <h5 class="modal-title">User Form</h5> 
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <div class="modal-header">
+          <h5 class="modal-title">User Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="mb-2">
+            <label>Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter the Name" />
+            <span id="name-error" class="text-danger"></span>
+          </div>
+          <div class="mb-2">
+            <label>Age</label>
+            <input type="text" id="age" class="form-control" placeholder="Enter the Age" />
+            <span id="age-error" class="text-danger"></span>
+          </div>
+          <div class="mb-2">
+            <label>Gender</label>
+            <input type="text" id="gender" class="form-control" placeholder="Enter the Gender" />
+            <span id="gender-error" class="text-danger"></span>
+          </div>
+          <div class="mb-2">
+            <label>Email</label>
+            <input type="text" id="email" class="form-control" placeholder="Enter the Email" />
+            <span id="email-error" class="text-danger"></span>
+          </div>
+          <div class="mb-2">
+            <label>Phone</label>
+            <input type="text" id="phone" class="form-control" placeholder="Enter the Mobile" />
+            <span id="phone-error" class="text-danger"></span>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+
+          <button class="btn btn-primary" type="button" onclick="submitForm(event)">Submit</button>
+
+        </div>
+
       </div>
-
-      <div class="modal-body">
-        <div class="mb-2">
-          <label>Name</label>
-          <input type="text" id="name" class="form-control" placeholder="Enter the Name" />
-          <span id="name-error" class="text-danger"></span>
-        </div>
-        <div class="mb-2">
-          <label>Age</label>
-          <input type="text" id="age" class="form-control" placeholder="Enter the Age"/>
-          <span id="age-error" class="text-danger"></span>
-        </div>
-        <div class="mb-2">
-          <label>Gender</label>
-          <input type="text" id="gender" class="form-control" placeholder="Enter the Gender" />
-          <span id="gender-error" class="text-danger"></span>
-        </div>
-        <div class="mb-2">
-          <label>Email</label>
-          <input type="text" id="email" class="form-control" placeholder="Enter the Email" />
-          <span id="email-error" class="text-danger"></span>
-        </div>
-        <div class="mb-2">
-          <label>Phone</label>
-          <input type="text" id="phone" class="form-control" placeholder="Enter the Mobile"/>
-          <span id="phone-error" class="text-danger"></span>
-        </div>
-      </div>
-
-      <div class="modal-footer">
-       
-        <button class="btn btn-primary" type="button"  onclick="submitForm(event)">Submit</button>   
-       
-      </div>
-
     </div>
   </div>
-</div>
 
-<!-- Table -->
-<div class="container mt-4">
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>S.No</th>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Gender</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>Edit</th>
-        <th>Delete</th>
+  <!-- Table -->
+  <div class="container mt-4">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Edit</th>
+          <th>Delete</th>
 
-      </tr>
-    </thead>
-    <tbody id="store">
+        </tr>
+      </thead>
+      <tbody id="store">
 
 
-      <!-- Data will be inserted here -->
-    </tbody>
-  </table>
-</div>
+        <!-- Data will be inserted here -->
+      </tbody>
+    </table>
+  </div>
 
-<!-- <script src="CRUD.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="CRUD.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
+  <script>
 
-let editIndex = null; 
+    let editIndex = null;
 
-function submitForm(event) {
-  event.preventDefault();
+    function submitForm(event) {
+      event.preventDefault();
 
-  let name = document.getElementById("name").value.trim();
-  let age = document.getElementById("age").value.trim();
-  let gender = document.getElementById("gender").value.trim();
-  let email = document.getElementById("email").value.trim();
-  let phone = document.getElementById("phone").value.trim();
+      let name = document.getElementById("name").value.trim();
+      let age = document.getElementById("age").value.trim();
+      let gender = document.getElementById("gender").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let phone = document.getElementById("phone").value.trim();
 
-  let nameerr = document.getElementById("name-error");
-  let ageerr = document.getElementById("age-error");
-  let gendererr = document.getElementById("gender-error");
-  let emailerr = document.getElementById("email-error");
-  let phoneerr = document.getElementById("phone-error");
+      let nameerr = document.getElementById("name-error");
+      let ageerr = document.getElementById("age-error");
+      let gendererr = document.getElementById("gender-error");
+      let emailerr = document.getElementById("email-error");
+      let phoneerr = document.getElementById("phone-error");
 
-  nameerr.innerHTML = "";
-  ageerr.innerHTML = "";
-  gendererr.innerHTML = "";
-  emailerr.innerHTML = "";
-  phoneerr.innerHTML = "";
+      nameerr.innerHTML = "";
+      ageerr.innerHTML = "";
+      gendererr.innerHTML = "";
+      emailerr.innerHTML = "";
+      phoneerr.innerHTML = "";
 
-  let isvalid = true;
+      let isvalid = true;
 
-  let nameRegex = /^[a-zA-Z\s]+$/;
-  let ageRegex = /^[0-9]{1,3}$/;
-  let genderRegex = /^(male|female)$/i;
-  let emailRegex = /^[a-zA-Z0-9._]+@[a-zA-Z0-9]+\.(com)$/;
-  let phoneRegex = /^[6-9][0-9]{9}$/;
+      let nameRegex = /^[a-zA-Z\s]+$/;
+      let ageRegex = /^[0-9]{1,3}$/;
+      let genderRegex = /^(male|female)$/i;
+      let emailRegex = /^[a-zA-Z0-9._]+@[a-zA-Z0-9]+\.(com)$/;
+      let phoneRegex = /^[6-9][0-9]{9}$/;
 
-    // Validations
-    if (name === "") {
-      nameerr.innerHTML = "Please enter the name";
-      isvalid = false;
-    } else if (!nameRegex.test(name)) {
-      nameerr.innerHTML = "Enter a valid name";
-      isvalid = false;
+      // Validations
+      if (name === "") {
+        nameerr.innerHTML = "Please enter the name";
+        isvalid = false;
+      } else if (!nameRegex.test(name)) {
+        nameerr.innerHTML = "Enter a valid name";
+        isvalid = false;
+      }
+
+      if (age === "") {
+        ageerr.innerHTML = "Please enter the age";
+        isvalid = false;
+      } else if (!ageRegex.test(age)) {
+        ageerr.innerHTML = "Enter a valid age";
+        isvalid = false;
+      }
+
+      if (gender === "") {
+        gendererr.innerHTML = "Please enter the gender";
+        isvalid = false;
+      } else if (!genderRegex.test(gender)) {
+        gendererr.innerHTML = "Enter either 'Male' or 'Female'";
+        isvalid = false;
+      }
+
+      if (email === "") {
+        emailerr.innerHTML = "Please enter the email";
+        isvalid = false;
+      } else if (!emailRegex.test(email)) {
+        emailerr.innerHTML = "Enter a valid email";
+        isvalid = false;
+      }
+
+      if (phone === "") {
+        phoneerr.innerHTML = "Please enter the phone number";
+        isvalid = false;
+      } else if (!phoneRegex.test(phone)) {
+        phoneerr.innerHTML = "Enter a valid 10-digit phone number starting with 6-9";
+        isvalid = false;
+      }
+
+      if (isvalid == false) {
+        return false;
+      }
+
+      let allUsers = JSON.parse(localStorage.getItem("users")) || [];
+
+      const newUser = {
+        Name: name,
+        Age: age,
+        Gender: gender,
+        Email: email,
+        Phone: phone
+      };
+
+
+      if (editIndex !== null) {
+        allUsers[editIndex] = newUser;
+        editIndex = null;
+        alert("User updated successfully");
+      } else {
+        allUsers.push(newUser);
+        alert("Form submitted successfully");
+      }
+
+      localStorage.setItem("users", JSON.stringify(allUsers));
+      displayUsers();
+
+      // Clear form
+      document.getElementById("name").value = "";
+      document.getElementById("age").value = "";
+      document.getElementById("gender").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("phone").value = "";
+
+      // Hide modal
+      let modal = bootstrap.Modal.getInstance(document.getElementById('userModal'));
+      modal.hide();
+
     }
 
-    if (age === "") {
-      ageerr.innerHTML = "Please enter the age";
-      isvalid = false;
-    } else if (!ageRegex.test(age)) {
-      ageerr.innerHTML = "Enter a valid age";
-      isvalid = false;
-    }
-
-    if (gender === "") {
-      gendererr.innerHTML = "Please enter the gender";
-      isvalid = false;
-    } else if (!genderRegex.test(gender)) {
-      gendererr.innerHTML = "Enter either 'male' or 'female'";
-      isvalid = false;
-    }
-
-    if (email === "") {
-      emailerr.innerHTML = "Please enter the email";
-      isvalid = false;
-    } else if (!emailRegex.test(email)) {
-      emailerr.innerHTML = "Enter a valid email";
-      isvalid = false;
-    }
-
-    if (phone === "") {
-      phoneerr.innerHTML = "Please enter the phone number";
-      isvalid = false;
-    } else if (!phoneRegex.test(phone)) {
-      phoneerr.innerHTML = "Enter a valid 10-digit phone number starting with 6-9";
-      isvalid = false;
-    }
-    
-  if (isvalid ==false) {
-    return false;
-  }
-
-  let allUsers = JSON.parse(localStorage.getItem("users")) || [];
-
-  const newUser = {
-    Name: name,
-    Age: age,
-    Gender: gender,
-    Email: email,
-    Phone: phone
-  };
 
 
-  if (editIndex !== null) {
-    allUsers[editIndex] = newUser;
-    editIndex = null;
-    alert("User updated successfully");
-  } else {
-    allUsers.push(newUser);
-    alert("Form submitted successfully");
-  }
+    function displayUsers() {
+      const allUsers = JSON.parse(localStorage.getItem("users")) || [];
 
-  localStorage.setItem("users", JSON.stringify(allUsers));
-  displayUsers();
-
-  // Clear form
-  document.getElementById("name").value = "";
-  document.getElementById("age").value = "";
-  document.getElementById("gender").value = "";
-  document.getElementById("email").value = "";
-  document.getElementById("phone").value = "";
-
-  // Hide modal
-  let modal = bootstrap.Modal.getInstance(document.getElementById('userModal'));
-  modal.hide();
-
-}
-
-
-
-  function displayUsers() {
-    const allUsers = JSON.parse(localStorage.getItem("users")) || [];
-
-    let rows = "";
-    allUsers.forEach((user, index) => {
-      rows += `
+      let rows = "";
+      allUsers.forEach((user, index) => {
+        rows += `
         <tr>
           <td>${index + 1}</td>
           <td>${user.Name}</td>
@@ -223,52 +225,53 @@ function submitForm(event) {
 
         </tr>
       `;
-    });
+      });
 
-    document.getElementById("store").innerHTML = rows;
+      document.getElementById("store").innerHTML = rows;
 
-  }
-
-
-// Function To Update Data
-function edituser(index) {
-  let users = JSON.parse(localStorage.getItem("users")) || [];
-  let user = users[index];
-
-  // Fill form with user data
-  document.getElementById("name").value = user.Name;
-  document.getElementById("age").value = user.Age;
-  document.getElementById("gender").value = user.Gender;
-  document.getElementById("email").value = user.Email;
-  document.getElementById("phone").value = user.Phone;
-
-  // Set global editIndex so form knows this is an update
-  editIndex = index;
-
-  // Open the modal programmatically
-  let modal = new bootstrap.Modal(document.getElementById('userModal'));
-  modal.show();
-}
+    }
 
 
+    // Function To Update Data
+    function edituser(index) {
+      let users = JSON.parse(localStorage.getItem("users")) || [];
+      let user = users[index];
 
-// Delete Function
-function deleteUser(index) {
-  let users = JSON.parse(localStorage.getItem("users")) || [];
-  users.splice(index, 1); // Remove 1 item at 'index'
-  localStorage.setItem("users", JSON.stringify(users));
-  displayUsers();
-}
+      //Editing Data
+      document.getElementById("name").value = user.Name;
+      document.getElementById("age").value = user.Age;
+      document.getElementById("gender").value = user.Gender;
+      document.getElementById("email").value = user.Email;
+      document.getElementById("phone").value = user.Phone;
+
+      // To Know this a Update not New Data
+      editIndex = index;
+
+      // Open the modal
+      let modal = new bootstrap.Modal(document.getElementById('userModal'));
+      modal.show();
+    }
 
 
 
-  window.onload = displayUsers;
+    // Delete Function
+    function deleteUser(index) {
+      let users = JSON.parse(localStorage.getItem("users")) || [];
+      users.splice(index, 1); // Remove 1 item at 'index'
+      localStorage.setItem("users", JSON.stringify(users));
+      displayUsers();
+    }
 
 
-</script>
+
+    window.onload = displayUsers;
+
+
+  </script>
 
 
 
 
 </body>
+
 </html>
