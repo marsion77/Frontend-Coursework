@@ -91,9 +91,8 @@
 
 <script>
 
-let editIndex = null;
+let editIndex = null; 
 
-    
 function submitForm(event) {
   event.preventDefault();
 
@@ -177,6 +176,7 @@ function submitForm(event) {
     Email: email,
     Phone: phone
   };
+
 
   if (editIndex !== null) {
     allUsers[editIndex] = newUser;
