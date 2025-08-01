@@ -7,48 +7,47 @@
     <title>Document</title>
 </head>
 <body>
-
-
 <label for="">Task</label><input type="text" id="tasks">
 <button type="submit" onclick="submit()">Submit</button>
 
 
-<ul id="datata">
-    
+<ul id="datata">   
 </ul>
-
 <script>
 
 function submit(){
 var maintask = document.getElementById("tasks").value
-
 var data = JSON.parse(localStorage.getItem("Do")) || []
-
 data.push(maintask)
-
 localStorage.setItem("Do",JSON.stringify(data))
-
 console.log(data);
+let valid = true
+    if (maintask == "") {
+         alert("Please Enter Tasks")
+           return false
+    }
+  
+       
+
 
 display()
 
 }
 
+
+
 function display(){
 var dis = JSON.parse(localStorage.getItem("Do")) || []
-
 hiii = ""
-
 dis.forEach((element,index) => {
-//    hiii = hiii + `<li> ${index + 1.element}$ </li>`
-hiii = hiii + `<li>${index + 1}.${element}</li>`;
+hiii = hiii + `<li>${index + 1}.${element} <button onclick = "remove(hiii)">Delete</button></li>`;
 });
-
-
-
-
-
 document.getElementById("datata").innerHTML = hiii
+}
+
+function remove(){
+var storeddata = JSON.parse(localStorage.getItem("Do")) || []
+ 
 
 }
 
