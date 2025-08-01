@@ -14,7 +14,7 @@ a.value = a.value.slice(0,-1);
 }
 
 function none(){
-document.getElementById("div").style.display = "none"
+document.getElementById("div").style.background = "white"
 }
 
 function calculate(){
