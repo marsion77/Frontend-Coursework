@@ -6,6 +6,8 @@
 ---
 
 ## 📚 About This Repository
+<img width="100%" height="560" alt="image" src="https://github.com/user-attachments/assets/c8d1488c-5d09-465a-ac7b-e173a6cc7b04" />
+
 
 This repository contains all the **HTML, CSS, and JavaScript** files I wrote during my learning journey. It includes:
 
