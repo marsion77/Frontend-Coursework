@@ -1,59 +1,25 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<label for="">Task</label><input type="text" id="tasks">
-<button type="submit" onclick="submit()">Submit</button>
-
-
-<ul id="datata">   
-</ul>
 <script>
 
-function submit(){
-var maintask = document.getElementById("tasks").value
-var data = JSON.parse(localStorage.getItem("Do")) || []
-data.push(maintask)
-localStorage.setItem("Do",JSON.stringify(data))
-console.log(data);
-let valid = true
-    if (maintask == "") {
-         alert("Please Enter Tasks")
-           return false
+let hi = false
+
+
+let task = new Promise(function(Resolve,reject){
+
+    if(false)
+
+    Resolve()
+    reject()
+})
+
+task.then(
+    function(value){
+        console.log("Hello")   
+    },
+    function(error){
+        console.log("Not Hello");
+        
+
     }
-  
-       
-
-
-display()
-
-}
-
-
-
-function display(){
-var dis = JSON.parse(localStorage.getItem("Do")) || []
-hiii = ""
-dis.forEach((element,index) => {
-hiii = hiii + `<li>${index + 1}.${element} <button onclick = "remove(hiii)">Delete</button></li>`;
-});
-document.getElementById("datata").innerHTML = hiii
-}
-
-function remove(){
-var storeddata = JSON.parse(localStorage.getItem("Do")) || []
- 
-
-}
-
+)
 
 </script>
-
-
-</body>
-</html>

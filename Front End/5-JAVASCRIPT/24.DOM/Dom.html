@@ -39,10 +39,33 @@
 
         <button id="hover-btn" onmouseover="hover(this)" onmouseout="nohover(this)"> Hover Me </button>
 
-    </div>
+    </div><br><br>
 
+    <div id="practice">Hello</div>
+    <span id="error">Hi</span>
+    <ul class="list"></ul>
 
     <script>
+
+        let errormsg = document.getElementById("error")
+        let content = document.getElementById("practice")
+
+        content.addEventListener("click", () => {
+            setTimeout(() => {
+                errormsg.textContent = "lorem10"
+            }, 5000)
+        })
+
+
+
+        let l = document.getElementById("list")
+
+        document.createElement("li")
+
+
+
+
+
 
 
         function change() {
