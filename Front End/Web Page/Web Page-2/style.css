@@ -551,6 +551,7 @@ color: #F89D13;
   width: 100%;
   background-color: #333333;
   height: 400px;
+  min-height: fit-content;
 }
 
 

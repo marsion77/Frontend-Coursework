@@ -1,12 +1,7 @@
 
-
-<div id="divi"></div>
-
-
-
-
-<script>
-    var a = document.getElementById("divi")
+// <!-- <div id="divi"></div> -->
+{/* <script> */}
+    // var a = document.getElementById("divi")
 console.log("Please Wait We are Uploading a File");
 function uploadingFile(){
     return new Promise((resoleve,reject)=>{
@@ -25,16 +20,16 @@ resoleve("Its Less Than 0.5")
 uploadingFile()
 .then((message)=>{
     console.log(message);  
-    a.textContent = (message) 
+    // a.textContent = (message) 
 })
 
 .catch((error)=>{
 console.log(error);
-a.textContent = (error) 
+// a.textContent = (error) 
 
 })
 
 
 
 
-</script>
+// </script>
