@@ -1,8 +1,8 @@
 const a = new Promise((res,rej)=>{
 console.log("Maariosn Prcticing Promises");
 setTimeout(()=>{
-let vail = true
-if(vail){
+let availability = true
+if(availability){
     res("Its Available")
 }else{
     rej("Its Not Available")
