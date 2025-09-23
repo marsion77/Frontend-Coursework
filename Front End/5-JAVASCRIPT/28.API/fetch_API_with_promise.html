@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+// Fetch with Promises
+
+      const myapi = fetch("https://catfact.ninja/fact");
+      myapi
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("URL NOT FOUND MATE");
+          } else {
+            return response.json();
+          }
+        })
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+
+
+        async function f1() {
+          try{
+              const a = await fetch('https://catfact.ninja/fact')
+            const b = await a.json()
+            console.log(b); 
+          }   catch(error){
+            console.log(error);
+            
+          }    finally{
+            console.log("API Successfull Mate");
+            
+          }            
+        } 
+        // Calling the Function
+        f1()
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
