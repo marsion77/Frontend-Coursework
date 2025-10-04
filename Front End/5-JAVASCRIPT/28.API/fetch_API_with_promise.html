@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      fieldset{
+        height: 100px;
+        width: 50%;
+        margin: auto;
+        margin-top: 200px;
+      }
+    </style>
+
+    <fieldset>
+      <legend>Data</legend>
+      <div id="content">
+
+    </div>
+    </fieldset>
+
   </head>
   <body>
     <script>
@@ -21,10 +38,13 @@
         })
         .then((data) => {
           console.log(data);
+document.getElementById("content").textContent = JSON.stringify(data);
+          
         })
         .catch((error) => {
           console.log(error);
         });
+
 
 
         async function f1() {
@@ -45,7 +65,7 @@
 
 
 
-
+// document.getElementById("content").textContent = JSON.stringify(myapi);
 
 
 
