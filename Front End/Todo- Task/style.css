@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: table;
+}
+
+.main-container{
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-top: 70px;
+}
