@@ -1,30 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script>
-  name = "Maarison"
-  password = "123"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Structured Form</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>My Form</legend>
 
-  user_name = prompt("Enter Your Name")
-  user_pass = prompt("Enter the Paswword")
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+        </div>
 
-  if (user_name == name){
-    if(user_pass == password){
-      console.log("Login Successful");
-      
-    }else{
-      console.log("Invalid Password");
-    
-    }
-  }else{
-    console.log("Invalid User Name");
-    
-  }
-</script>
-</body>
+        <div>
+          <label for="age">Age:</label>
+          <input type="text" id="age" name="age" />
+        </div>
+
+        <div>
+          <span>Gender:</span>
+          <label><input type="radio" name="gender" value="Male" /> Male</label>
+          <label><input type="radio" name="gender" value="Female" /> Female</label>
+        </div>
+
+        <div>
+          <span>Favorite Games:</span>
+          <label><input type="checkbox" name="games" value="Cricket" /> Cricket</label>
+          <label><input type="checkbox" name="games" value="Football" /> Football</label>
+          <label><input type="checkbox" name="games" value="Handball" /> Handball</label>
+        </div>
+
+        <div>
+          <label for="lang">Programming Language:</label>
+          <select id="lang" name="language">
+            <option>Python</option>
+            <option>Java</option>
+            <option>JavaScript</option>
+            <option>C++</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="feedback">Feedback:</label><br />
+          <textarea id="feedback" name="feedback" rows="3" cols="30"></textarea>
+        </div>
+
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
 </html>
